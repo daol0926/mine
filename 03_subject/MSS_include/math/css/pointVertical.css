@@ -1,0 +1,128 @@
+
+/* 세로식 (곱셈) */
+fomula.pointVertical {
+  display: block;
+}
+fomula.pointVertical> div {
+  display: flex;
+}
+fomula.pointVertical > div:nth-child(2n) {
+  padding: 0 0 5px 0 !important;
+  margin-bottom: 5px;
+  border-bottom: 3px solid black;
+  border-radius: 0;
+}
+fomula.pointVertical > div:nth-child(2n).blueLine {
+  border-bottom: 3px solid #0080FF;
+}
+fomula.pointVertical > div:nth-child(2n+1) {
+  margin-top: 3px;
+}
+fomula.pointVertical > div > span {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  /* outline: 1px solid red; */
+}
+fomula.pointVertical.wide > div > span {
+  margin: 0 5px;
+}
+fomula.pointVertical > div > span.dot::after {
+  content: '.';
+  position: absolute;
+  right: -5px;
+}
+fomula.pointVertical.wide > div > span.dot::after {
+  right: -10px;
+}
+
+fomula.pointVertical .toggleText[class *= "toggleMore"] {
+  display: flex;
+  right: 0;
+  min-width: auto;
+  width: auto;
+  height: auto;
+  margin: 2px 0 0 0px;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+fomula.pointVertical .toggle.text:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -13px;
+  width: 48px;
+  height: 60px;
+  margin: 0px 0 0 0;
+  border-radius: 8px;
+}
+fomula.pointVertical .toggle.text[class *= "toggleMore"]:before {
+  right: -2px;
+  top: -2px;
+}
+fomula.pointVertical .toggle.text[class *= "toggleMore"]:after {
+  /* top: calc(50% + 3px); */
+}
+fomula.pointVertical .toggle.text.toggleMore:after,
+fomula.pointVertical .toggle.text.toggleMore_3:after {
+  left: calc(50% + 31px);
+}
+fomula.pointVertical .toggle.text.toggleMore:before,
+fomula.pointVertical .toggle.text.toggleMore_2:before,
+fomula.pointVertical .toggle.box.toggleMore_2:before { width: 120px; }
+fomula.pointVertical .toggle.text.toggleMore_3:before,
+fomula.pointVertical .toggle.box.toggleMore_3:before { width: 180px; }
+fomula.pointVertical .toggle.text.toggleMore_4:before,
+fomula.pointVertical .toggle.box.toggleMore_4:before { width: 240px; }
+fomula.pointVertical .toggle.text.toggleMore_5:before,
+fomula.pointVertical .toggle.box.toggleMore_5:before { width: 300px; }
+
+
+fomula.pointVertical .toggle.grayLine:before {
+  background: #fff;
+  border: 2px solid #cccccc;
+}
+fomula.pointVertical .toggle.beigeBg:before {
+  background: #EDE8DA;
+  border: 2px solid #EDE8DA;
+}
+fomula.pointVertical .toggle.beigeBg.after_noBg.complete:before {
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+
+fomula.pointVertical .toggleText.toggle.box:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  border-radius: 10px;
+}
+fomula.pointVertical .toggleText.bigBox.toggle.complete.beigeBg:before {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+/* 소수점 낱개 토글 */
+fomula.pointVertical.wide .toggle.text {
+  width: 60px;
+  height: 60px;
+  margin-top: 0;
+}
+
+
+
+fomula.pointVertical .toggle.blue, 
+fomula.pointVertical .toggle .blue,
+fomula.pointVertical .toggleText.blue span,
+fomula.pointVertical .toggleText span.blue,
+fomula.pointVertical .blue span,
+fomula.pointVertical.blue *,
+fomula.pointVertical .toggle .answer,
+fomula.pointVertical [data-toggle-target] {
+  color: #0080FF;
+}

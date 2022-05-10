@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.tab  [data-slides] [data-slide-container="inner"] .video,
+.tab .chapterOpen [data-slides] .video {
+	width: 1154px;
+	height: 650px;
+	margin: 0 auto;
+}

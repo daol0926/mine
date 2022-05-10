@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* Table */
+.tableContainer {
+  position: relative;
+  font-size: 43px;
+  font-family: 'KoPubDotumB', sans-serif;
+  box-sizing: border-box;
+}
+
+.tableContainer table {
+  font-size: inherit;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+.tableContainer.fix table {
+  table-layout: fixed;
+}
+.tableContainer.collapse table {
+  border-collapse: collapse;
+}
+.tableContainer table td {
+  background-color: #fff;
+}
+.tableContainer table th {
+  font-family: 'KoPubDotumB', sans-serif;
+}
+.tableContainer table td,
+.tableContainer table th {
+  text-align: center;
+  padding: 2px 14px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.tableContainer table td > img { vertical-align: top; }
+
+/* green */
+.tableContainer.green table tr th {
+  background-color: #EFEFDF;
+}
+.tableContainer.green table tr td,
+.tableContainer.green table tr th.lightGreen {
+  background-color: #F8F8F1;
+}
+
+/* beige */
+.tableContainer.beige table th {
+  background-color: #e3e3d5;
+}
+.tableContainer.beige table tr td,
+.tableContainer.beige table tr th.lightBeige {
+  background-color: #faf8f0;
+}
+
+/* emerald */
+.tableContainer.emerald table th {
+  background-color: #D3E9E4;
+}
+.tableContainer.emerald table tr td,
+.tableContainer.emerald table tr th.lightEmerald {
+  background-color: #F0F8F6;
+}
+
+/* blue */
+.tableContainer.blue table th {
+  background-color: #CEE5ED;
+}
+.tableContainer.blue table tr td,
+.tableContainer.blue table tr th.lightBlue {
+  background-color: #F1F7FA;
+}
+
+/* blue2 */
+.tableContainer.blue2 table th {
+  background-color: #BFDFF5;
+}
+.tableContainer.blue2 table tr td,
+.tableContainer.blue2 table tr th.lightBlue {
+  background-color: #E6F5FF;
+}
+
+/* brown */
+.tableContainer.brown table th {
+  background-color: #e9e1c8;
+}
+.tableContainer.brown table tr td,
+.tableContainer.brown table tr th.lightBrown {
+  background-color: #faf8f2;
+}
+
+/* purple */
+.tableContainer.purple table th {
+  background-color: #e0d3ea;
+}
+.tableContainer.purple table tr td,
+.tableContainer.purple table tr th.lightPurple {
+  background-color: #f4f0f8;
+}
+
+/* purple2 */
+.tableContainer.purple2 table th {
+  background-color: #D9CBE1;
+}
+.tableContainer.purple2 table tr td,
+.tableContainer.purple2 table tr th.lightPurple {
+  background-color: #F8F2FC;
+}
+
+/* gray */
+.tableContainer.gray table th {
+  background-color: #d7d9d7;
+}
+.tableContainer.gray table tr td,
+.tableContainer.gray table tr th.lightGray {
+  background-color: #ebebeb;
+}
+
+/* ivoryGray */
+.tableContainer.ivoryGray table th {
+  background-color: #ebe6d8;
+}
+.tableContainer.ivoryGray table tr td,
+.tableContainer.ivoryGray table tr th.gray {
+  background-color: #ebebeb;
+}
+/*********************layout Table css *********************/
+.tableContainer caption {
+  display: table-caption;
+  margin: 0 0 10px 0;
+}
+
+.tableContainer.center table tr td,
+.tableContainer td.center {
+  text-align: center;
+}
+.tableContainer.justify table tr td,
+.tableContainer td.justify {
+  text-align: justify;
+}
+.tableContainer.left table tr td,
+.tableContainer td.left {
+  text-align: left;
+}
+.tableContainer.center .toggle .answer { text-align: center; }
+.tableContainer.justify .toggle .answer { text-align: justify; }
+.tableContainer.left .toggle .answer { text-align: left; }
+
+/* crossLine */
+.tableContainer .crossLine {
+  position: relative;
+}
+.tableContainer .crossLine span {
+  position: absolute;
+  font-size: 0.5em;
+  letter-spacing: -2px;
+}
+.tableContainer.beige .crossLine.top {
+  background-image: linear-gradient(to top right, #F8E7D7 49%, #EFE8E0, #F8E7D7 51%);
+}
+.tableContainer.beige .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #F8E7D7 49%, #EFE8E0, #F8E7D7 51%);
+}
+.tableContainer.green .crossLine.top {
+  background-image: linear-gradient(to top right, #EFEFDF 49%, #fff, #EFEFDF 51%);
+}
+.tableContainer.green .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #EFEFDF 49%, #fff, #EFEFDF 51%);
+}
+.tableContainer.emerald .crossLine.top {
+  background-image: linear-gradient(to top right, #D3E9E4 49%, #fff, #D3E9E4 51%);
+}
+.tableContainer.emerald .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #D3E9E4 49%, #fff, #D3E9E4 51%);
+}
+.tableContainer.blue .crossLine.top {
+  background-image: linear-gradient(to top right, #CEE5ED 49%, #fff, #CEE5ED 51%);
+}
+.tableContainer.blue .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #CEE5ED 49%, #fff, #CEE5ED 51%);
+}
+.tableContainer.brown .crossLine.top {
+  background-image: linear-gradient(to top right, #e9e1c8 49%, #fff, #e9e1c8 51%);
+}
+.tableContainer.brown .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #e9e1c8 49%, #fff, #e9e1c8 51%);
+}
+
+.tableContainer.purple .crossLine.top {
+  background-image: linear-gradient(to top right, #e0d3ea 49%, #fff, #e0d3ea 51%);
+}
+.tableContainer.purple .crossLine.bottom {
+  background-image: linear-gradient(to bottom right, #e0d3ea 49%, #fff, #e0d3ea 51%);
+}
+/* etc layout */
+.popup_pages .scroll_container .tableContainer {
+  margin: inherit;
+}
+
+/* check */
+.tableContainer[data-self-check] table tr th {
+  text-align: justify;
+}

@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* 노토 산스 */
+@font-face {
+  font-family: NotoR;
+  src: url("../font/NotoSansCJKkr-Regular.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: NotoM;
+  src: url("../font/NotoSansCJKkr-Regular.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: NotoB;
+  src: url("../font/NotoSansCJKkr-Bold.woff");
+  font-display: swap;
+}
+
+.NotoR {
+  font-family: NotoR;
+}
+.NotoM {
+  font-family: NotoM;
+}
+.NotoB {
+  font-family: NotoB;
+}
+
+
+/* SCDREAM */
+@font-face {
+  font-family: SCDreamM;
+  src: url("../font/SCDream5.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: SCDreamB;
+  src: url("../font/SCDream6.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: SCDreamH;
+  src: url("../font/SCDream8.woff");
+  font-display: swap;
+}
+
+.SCDreamM {
+  font-family: SCDreamM;
+}
+.SCDreamB {
+  font-family: SCDreamB;
+}
+.SCDreamH {
+  font-family: SCDreamH;
+}
+
+
+/* SCDREAM */
+@font-face {
+  font-family: KoPubDotumM;
+  src: url("../font/KoPubDotumMedium.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: KoPubBatangM;
+  src: url("../font/KoPubBatangMedium.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KoPubDotumB;
+  src: url("../font/KoPubDotumBold.woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: KoPubBatangB;
+  src: url("../font/KoPubBatangBold.woff");
+  font-display: swap;
+}
+
+.KoPubDotumM {
+  font-family:KoPubDotumM;
+}
+.KoPubDotumB {
+  font-family:KoPubDotumB;
+}
+.KoPubBatangB {
+  font-family: KoPubBatangB;
+}
+
+
+/* 여기 어때 잘난체 */
+@font-face {
+  font-family: YGJAL;
+  src: url("../font/Jalnan.woff");
+  font-display: swap;
+}
+
+.YGJAL {
+  font-family: YGJAL;
+}
+
+/* 배달의 민족 주아체 */
+@font-face {
+  font-family: BMJUA;
+  src: url("../font/BMJUA.woff");
+  font-display: swap;
+}
+
+.BMJUA {
+  font-family: BMJUA;
+}
+
+/* 고도 마음 */
+@font-face {
+  font-family: GodoM;
+  src: url("../font/godoMaum.woff");
+  font-display: swap;
+}
+
+.GodoM {
+  font-family: GodoM;
+}
+
+/* T ROUND EB */
+@font-face {
+  font-family: TRoundEB;
+  src: url("../font/TmoneyRoundWindExtraBold.woff");
+  font-display: swap;
+}
+
+.TRoundEB {
+  font-family: TRoundEB;
+}
+
+
+/* Gosanja */
+@font-face {
+  font-family: Gosanja;
+  src: url("../font/Gosanja.woff");
+  font-display: swap;
+}
+
+.Gosanja {
+  font-family: Gosanja;
+}

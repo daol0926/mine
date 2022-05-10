@@ -1,0 +1,30 @@
+
+/* keyPoint 핵심정리 */
+#wrap.sci.keyPoint {
+  background: #9ce3d1 url(../images/keyPoint/bg_keyPoint.svg) center/ contain no-repeat;
+}
+
+#wrap.sci.keyPoint .contentsBox {
+  padding: 170px 40px 20px 40px;
+}
+#wrap.sci.keyPoint .contentsBox[data-slide-container] {
+  padding: 170px 40px 50px 40px;
+}
+#wrap.sci.keyPoint main > h1{
+  position: absolute;
+  top: 60px;
+  left: 736px;
+  width: 460px;
+  font-size: 52px;
+  font-family: SCDreamB;
+  letter-spacing: -2px;
+}
+
+#wrap.sci.keyPoint .moveButtonContainer {
+  background-color: transparent;
+}
+
+#wrap.sci.keyPoint .study_guide {
+  top: 10px;
+  right: 10px;
+}

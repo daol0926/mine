@@ -1,0 +1,141 @@
+/* CHECK QUIZ TABS DESIGN*/
+/* normal tab */
+.lineHeader .basicSlider_tabs {
+  top: -59px;
+}
+.math.lineHeader .basicSlider_tabs {
+  top: -56px;
+}
+.sci.lineHeader .basicSlider_tabs {
+  top: -47px;
+  height: 37px;
+}
+.lineHeader .basicSlider_tabs > li[data-prev] {
+  /* padding: 0 12px 0 6px; */
+  margin: 0 -13px 0 0;
+  padding-right: 20px;
+  /* box-sizing: content-box;
+  box-sizing: content-box; */
+}
+.lineHeader.math .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_left_math.png);
+}
+.lineHeader.soc .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_left_soc.png);
+}
+.lineHeader.sci .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_left_sci.png);
+}
+
+.soc.lineHeader .basicSlider_tabs li:hover,
+.soc.lineHeader .basicSlider_tabs li.over {
+  color: #fd0000;
+}
+.soc.lineHeader .basicSlider_tabs li.on:hover,
+.soc.lineHeader .basicSlider_tabs li.on.over {
+  color: #262626;
+}
+
+.sci.lineHeader .basicSlider_tabs li:hover,
+.sci.lineHeader .basicSlider_tabs li.over {
+  color: #009999;
+}
+.sci.lineHeader .basicSlider_tabs li.on:hover,
+.sci.lineHeader .basicSlider_tabs li.on.over {
+  color: #262626;
+}
+
+
+.lineHeader .basicSlider_tabs > li:last-of-type.on {
+  /* padding: 0; */
+}
+.lineHeader .basicSlider_tabs > li:last-of-type:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 100%;
+  right: -13px;
+  z-index: 1;
+}
+.lineHeader .basicSlider_tabs > li.on {
+  opacity: 1;
+}
+.soc.lineHeader .basicSlider_tabs > li.on {
+  opacity: 1;
+}
+.sci.lineHeader .basicSlider_tabs > li.on {
+  opacity: 1;
+}
+
+
+/* 수학 */
+
+.math.lineHeader .basicSlider_tabs > li {
+  background-color: #a6e1ff;
+}
+.math.lineHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_right_math.png") right center/100% 100% no-repeat;
+}
+.math.lineHeader .basicSlider_tabs > li.on {
+  background-color: #a6e1ff;
+  background-image: url(../images/slider/bg_tab_left_math.png);
+}
+.math.lineHeader .basicSlider_tabs > li.on:before {
+  background-image: url("../images/slider/bg_tab_left_math.png");
+}
+.math.lineHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_right_math.png");
+}
+
+
+.soc.lineHeader .basicSlider_tabs > li {
+  background-color: #fadadf;
+  opacity: 0.6;
+  color: #262626;
+}
+.sci.lineHeader .basicSlider_tabs > li {
+  background-color: #89e6d8;
+  opacity: 0.6;
+  color: #262626;
+}
+.soc.lineHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_right_soc.png") right center/100% 100% no-repeat;
+}
+.soc.lineHeader .basicSlider_tabs > li.on {
+  background-color: #fadadf;
+  background-image: url(../images/slider/bg_tab_left_soc.png);
+}
+.soc.lineHeader .basicSlider_tabs > li.on:before {
+  background-image: url("../images/slider/bg_tab_left_soc.png");
+}
+.soc.lineHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_right_soc.png");
+}
+
+.sci.lineHeader .basicSlider_tabs > li:not(:first-of-type):before {
+  height: 30px;
+  top: 6px;
+}
+.sci.lineHeader .basicSlider_tabs > li {
+  background-color: #89e6d8;
+}
+.sci.lineHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_right_sci.png") right center/100% 100% no-repeat;
+}
+.sci.lineHeader .basicSlider_tabs > li.on {
+  background-color: #89e6d8;
+  background-image: url(../images/slider/bg_tab_left_sci.png);
+}
+.sci.lineHeader .basicSlider_tabs > li:not(:first-of-type):before {
+  height: 25px;
+  top: 6px;
+}
+.sci.lineHeader .basicSlider_tabs > li.on:before {
+  top: 0;
+  height: 100%;
+  background-image: url("../images/slider/bg_tab_left_sci.png");
+}
+.sci.lineHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_right_sci.png");
+}

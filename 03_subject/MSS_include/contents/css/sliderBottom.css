@@ -1,0 +1,122 @@
+/* CHECK QUIZ TABS DESIGN*/
+.highHeader .basicSlider_tabs {
+  top: -1px;
+  right: 36px;
+  height: 45px;
+  z-index: 1;
+}
+.highHeader .basicSlider_tabs > li {
+  min-width: 20px;
+  padding: 0 20px;
+  box-sizing: content-box;
+  background-color: #fadadf;
+  color: #262626;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: center;
+  opacity: 0.5;
+}
+.highHeader .basicSlider_tabs > li:not(:first-of-type):before {
+  /* height: 34px; */
+}
+.math.highHeader .basicSlider_tabs > li:not(:first-of-type):before {
+  height: 31px;
+}
+.highHeader .basicSlider_tabs > li[data-prev] {
+  /* padding: 0 12px 0 6px; */
+  margin: 0 -13px 0 0;
+  padding-right: 20px;
+  box-sizing: content-box;
+  box-sizing: content-box;
+}
+.highHeader.math .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_bottom_left_math.png);
+}
+.highHeader.soc .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_bottom_left_soc.png);
+}
+.highHeader.sci .basicSlider_tabs > li:first-of-type:before {
+  background-image: url(../images/slider/bg_tab_bottom_left_sci.png);
+}
+
+
+.highHeader .basicSlider_tabs > li:last-of-type.on {
+  /* padding: 0; */
+}
+.highHeader .basicSlider_tabs > li:last-of-type:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 100%;
+  right: -13px;
+  z-index: 1;
+}
+.highHeader .basicSlider_tabs > li.on {
+  opacity: 1;
+}
+.highHeader .basicSlider_tabs > li.on.hover,
+.highHeader .basicSlider_tabs > li.on:hover {
+  color: #262626;
+}
+.highHeader .basicSlider_tabs > li.hover,
+.highHeader .basicSlider_tabs > li:hover {
+  color: #fff
+}
+
+
+/* 수학 */
+
+.math.highHeader .basicSlider_tabs > li {
+  background-color: #a6e1ff;
+}
+.math.highHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_bottom_right_math.png") right center/100% 100% no-repeat;
+}
+.math.highHeader .basicSlider_tabs > li.on {
+  background-color: #a6e1ff;
+  background-image: url(../images/slider/bg_tab_bottom_left_math.png);
+}
+.math.highHeader .basicSlider_tabs > li.on:before {
+  background-image: url("../images/slider/bg_tab_bottom_left_math.png");
+  height: 100%;
+}
+.math.highHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_bottom_right_math.png");
+}
+
+
+.soc.highHeader .basicSlider_tabs > li {
+  background-color: #fadadf;
+}
+.soc.highHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_bottom_right_soc.png") right center/100% 100% no-repeat;
+}
+.soc.highHeader .basicSlider_tabs > li.on {
+  background-color: #fadadf;
+  background-image: url(../images/slider/bg_tab_bottom_left_soc.png);
+}
+.soc.highHeader .basicSlider_tabs > li.on:before {
+  background-image: url("../images/slider/bg_tab_bottom_left_soc.png");
+}
+.soc.highHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_bottom_right_soc.png");
+}
+
+
+.sci.highHeader .basicSlider_tabs > li {
+  background-color: #89e6d8;
+}
+.sci.highHeader .basicSlider_tabs > li:last-of-type:after {
+  background: url("../images/slider/bg_tab_bottom_right_sci.png") right center/100% 100% no-repeat;
+}
+.sci.highHeader .basicSlider_tabs > li.on {
+  background-color: #89e6d8;
+  background-image: url(../images/slider/bg_tab_bottom_left_sci.png);
+}
+.sci.highHeader .basicSlider_tabs > li.on:before {
+  background-image: url("../images/slider/bg_tab_bottom_left_sci.png");
+}
+.sci.highHeader .basicSlider_tabs > li.on:after {
+  background-image: url("../images/slider/bg_tab_bottom_right_sci.png");
+}

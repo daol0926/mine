@@ -1,0 +1,48 @@
+
+#wrap.sci.safetyLab_5M {
+  background-color: #e1faf6;
+}
+#wrap.sci.safetyLab_5M > h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  height: 100px;
+  padding: 0 4px;
+  background-color: #33c4ab;
+  transform: translateX(-50%);
+  font-size: 45px;
+  font-family: 'SCDreamH';
+  color: white;
+}
+#wrap.sci.safetyLab_5M > h1::before,
+#wrap.sci.safetyLab_5M > h1::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 105px;
+  height: 120px;
+
+}
+#wrap.sci.safetyLab_5M > h1::before {
+  left: -98px;
+  background: url(../images/safetyLab/bg_title_left.svg) left 0/ auto 100% no-repeat;
+}
+#wrap.sci.safetyLab_5M > h1::after {
+  right: -97px;
+  background: url(../images/safetyLab/bg_title_right.svg) right 0/ auto 100% no-repeat;
+}
+
+#wrap.sci.safetyLab_5M .contentsBox {
+  padding-top: 180px;
+}
+#wrap.sci.safetyLab_5M .study_guide {
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c2bcac url(../images/safetyLab/icon_info.svg) 4px center/41px auto no-repeat;
+}

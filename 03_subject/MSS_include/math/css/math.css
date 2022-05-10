@@ -1,0 +1,742 @@
+@charset "utf-8";
+@import url(intro.css);
+@import url(curriculum.css);
+@import url(act.css);
+@import url(chapterOpen.css);
+@import url(mathBullet.css);
+@import url(fomula.css);
+@import url(mathSymbols.css);
+@import url(finalQuiz.css);
+@import url(fraction.css);
+
+.pl_12 { padding-left: 12px !important; }
+
+/* 이미지 뿌연 현상 */
+#wrap.math {
+	image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+img {
+	image-rendering: -webkit-optimize-contrast;
+  /* transform: translateZ(0);
+  backface-visibility: hidden; */
+}
+#wrap.math header h1 {
+	padding-left: 30px;
+}
+#wrap.math h1.textColor.darkBlue {
+	color: #003366;
+}
+
+.textTopDot {position: relative;}
+.textTopDot:after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin-left: -4px;
+	background-color: #f76400;
+	border-radius: 50%;
+}
+.title.icon_o.blue {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../../../MSS_include/contents/images/icon/icon_O_big.svg) center/contain no-repeat;
+	vertical-align: middle;
+	margin: -10px 0 0 0;
+	opacity: 1;
+}
+.title.icon_x.red {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../../../MSS_include/contents/images/icon/icon_X_big.svg) center/contain no-repeat;
+	vertical-align: middle;
+	margin: -10px 0 0 0;
+	opacity: 1;
+}
+/* .title.icon_o.blue {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../../../MSS_include/contents/images/icon/icon_O_blue.svg) center/contain no-repeat;
+	vertical-align: middle;
+	margin: -10px 0 0 0;
+	opacity: 1;
+} */
+.title.icon_o.pink {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../../../MSS_include/contents/images/icon/icon_O.svg) center/contain no-repeat;
+	vertical-align: middle;
+	margin: -10px 0 0 0;
+	opacity: 1;
+}
+
+h2 > .icon.title {
+	top: 0;
+}
+.contentsBox h2 + section {
+	padding: 0 144px;
+}
+.blankBox.title {
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	background: #f1eee3;
+	border-radius: 10px;
+	vertical-align: bottom;
+}
+.blankBox.title.line {
+	background: #fff;
+	border-radius: 10px;
+	border: 2px solid #cccccc;
+	box-sizing: border-box;
+}
+.blankBox.title.line.blue {
+	border: 2px solid #0c79c2;
+}
+.blankBox.title.circle {
+	border-radius: 50%;
+	background: #fff;
+	border: 2px solid #cccccc;
+	box-sizing: border-box;
+	margin: 0;
+}
+.math .balloon {
+	font-size: 30px;
+}
+
+.toggle.fomula {
+	display: inline-block;
+	position: absolute;
+	min-width: 46px;
+	min-height: 60px;
+	margin: -8px 0 0 0;
+	padding: 8px 12px 4px;
+	font-size: inherit;
+	font-family: inherit;
+	vertical-align: top;
+}
+.toggle.fomula:after {
+	width: 48px;
+	height: 48px;
+}
+
+.toggle.fomula.complete { background-color: transparent; }
+
+.toggle.transparentBg {
+	background-color: #fff;
+}
+.toggle.transparentBg.complete {
+	background-color: transparent;
+	animation: bgTrnasparent 1s ease-out forwards;
+	-webkit-animation: bgTrnasparent 1s ease-out forwards;
+	-moz-animation: bgTrnasparent 1s ease-out forwards;
+}
+
+/* stepList */
+.stepList li {
+	display: flex;
+	align-items: center;
+}
+.stepList li:not(last-child) {
+	margin-bottom: 20px;
+}
+.stepList li .charImg[class *= 'step_'] {
+	margin-right: 10px;
+}
+
+/* icon rotate */
+.icon_rotate {
+	width: 100px;
+	height: 100px;
+}
+.icon_rotate.rotate_90 {
+	background: url(../images/icon/rotate_90.svg) center /contain no-repeat;
+}
+.icon_rotate.rotate_180 {
+	background: url(../images/icon/rotate_180.svg) center /contain no-repeat;
+}
+.icon_rotate.rotate_270 {
+	background: url(../images/icon/rotate_270.svg) center /contain no-repeat;
+}
+.icon_rotate.rotate-90 {
+	background: url(../images/icon/rotate-90.svg) center /contain no-repeat;
+}
+
+/* 상단 탭 */
+#wrap.math .basicSlider_tabs.top {
+	top: -68px;
+	right: auto;
+	bottom: auto;
+	left: 1395px;
+	height: 56px;
+	transform: translate(-50%);
+}
+#wrap.math .basicSlider_tabs.top > li {
+	width: 117px;
+	height: 56px;
+	margin: 0;
+	color: #fff;
+	font-size: 31px;
+	line-height: 56px;
+	font-family: 'SCDreamB', sans-serif;
+	/* border: 1px solid; */
+	box-sizing: border-box;
+}
+#wrap.math .basicSlider_tabs.top > li {
+	background: url("../images/button/btn_top_tab_math.svg") left top/100% auto no-repeat;
+	z-index: 1;
+}
+#wrap.math .basicSlider_tabs.top > li.on {
+	background: url("../images/button/btn_top_tab_math_on.svg") left top/100% auto no-repeat;
+	z-index: 2;
+}
+
+#wrap.math .basicSlider_tabs.top > li.on:before,
+#wrap.math .basicSlider_tabs.top > li.on:after,
+#wrap.math .basicSlider_tabs.top > li:nth-of-type(1):before { content: none; }
+#wrap.math .basicSlider_tabs.top[data-no-line] > li[data-prev],
+#wrap.math .basicSlider_tabs.top[data-no-line] > li.on + *,
+#wrap.math .basicSlider_tabs.top > li:last-of-type.on {
+	padding: 0;
+	margin: 0;
+}
+#wrap.math .basicSlider_tabs.top > li:nth-of-type(1).on {margin-right: -45px;}
+#wrap.math .basicSlider_tabs.top > li:nth-of-type(2).on {margin-left: -45px;}
+#wrap.math .basicSlider_tabs.top > li:last-child:after,
+#wrap.math .basicSlider_tabs.top > li.on:after {
+	background-position: right center;
+	background-color: transparent !important;
+	background-image: none;
+}
+
+/* 배울 내용 확인하기 */
+#wrap.math.learnContent header {
+	background-color: transparent;
+	padding-top: 60px;
+}
+#wrap.math.learnContent header h1 {
+	font-size: 60px;
+	color: #003366;
+	font-family: YGJAL;
+	padding-left: 0;
+	text-align: center;
+	justify-content: center;
+}
+#wrap.math.learnContent {
+	background: url(../images/background/bg_content.svg) center/ auto 100% no-repeat;
+}
+#wrap.math.learnContent .contentsBox {
+	padding: 40px 80px 40px;
+}
+.oxQuiz > div {
+	width: 50%;
+	height: 430px;
+}
+#wrap.math.learnContent .textBookNum {
+	top: 30px;
+	left: 558px;
+}
+#wrap.math.learnContent .contentsBox .content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 65px;
+	font-family: YGJAL;
+	text-align: center;
+}
+
+/* 수학 생각 */
+#wrap.math.mathWorld header {
+	height: 110px;
+	padding: 25px;
+	background: url(../images/background/bg_mathWorld.svg) 0 0/100% auto no-repeat;
+}
+
+/* 토글 */
+#wrap.math .toggle .answer.black {
+	color: #333333;
+}
+
+/* 풀이 */
+.solvContainer {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 1;
+}
+.solvBtn {
+	position: relative;
+	width: 138px;
+	height: 55px;
+	flex-shrink: 0;
+	margin-right: -138px;
+	border-radius: 30px;
+	background-color: #4ad38e;
+	overflow: visible;
+	z-index: 1;
+}
+.solvBtn:before,
+.solvBtn:after { pointer-events: none; }
+.solvBtn:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 17px;
+	width: 30px;
+	height: 35px;
+	background: url(../../contents/images/button/btn_Pencil.svg) center/contain no-repeat;
+}
+.solvBtn:after {
+	content: '풀이';
+	font-size: 30px;
+	font-family: 'SCDreamM', sans-serif;
+	line-height: 50px;
+	color: #fff;
+	padding: 0 0 0 34px;
+}
+.solvBtn + .solvContent {
+	font-size: 35px;
+	line-height: 1.4;
+	border-radius: 30px;
+	background-color: #e1f5e9;
+	box-sizing: border-box;
+	padding: 3px 30px 3px 170px;
+	font-family: 'SCDreamM', sans-serif;
+}
+
+/* 보기 */
+.math ins.bogi.title {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	top: -3px;
+	color: white;
+	width: 80px;
+	height: 50px;
+	padding: 0;
+	margin: 0 2px;
+	font-size: 30px;
+	border-radius: 15px;
+	font-family: 'SCDreamM', sans-serif;
+}
+.math .bogi-container .bogiTitle {
+	position: absolute;
+	top: 0;
+	color: white;
+	font-size: 30px;
+	border-radius: 20px;
+	padding: 7px 20px 50px;
+	font-family: 'SCDreamM', sans-serif;
+}
+
+/* 스텝 */
+.math .QandA .QandA_A {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 180px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.math .QandA .QandA_A.QandA_1 {
+	padding: 28px 57px 35px 200px;
+	background: url(../images/math/step1.svg) 0 0 / 100% auto no-repeat;
+}
+.math .QandA .QandA_A.QandA_2 {
+	padding: 23px 57px 41px 200px;
+	background: url(../images/math/step2.svg) 0 0 / 100% auto no-repeat;
+}
+.math .QandA .QandA_A.QandA_3 {
+	padding: 21px 57px 41px 200px;
+	background: url(../images/math/step3.svg) 0 0 / 100% auto no-repeat;
+}
+.math .QandA .QandA_A.QandA_4 {
+	padding: 22px 57px 42px 200px;
+	background: url(../images/math/step4.svg) 0 0 / 100% auto no-repeat;
+}
+.math .QandA .QandA_A.QandA_5 {
+	padding: 22px 57px 42px 200px;
+	background: url(../images/math/step5.svg) 0 0 / 100% auto no-repeat;
+}
+.math .QandA .QandA_A .toggle {
+	width: 100%;
+}
+
+/* answer line Box */
+.math .answerLineBox {
+	width: 72px;
+	height: 72px;
+	background: #fff;
+	border-radius: 10px;
+	border: 2px solid #cccccc;
+	box-sizing: border-box;
+}
+.math .answerLineBox.blue{
+	border: 2px solid #0095DA;
+}
+
+/* 수식 테이블 */
+.math .formulaTable_1 {
+	width: 242px;
+	height: 182px;
+	box-sizing: border-box;
+	background: url(../images/math/formulaTable_1.png) 0 0 / 100% auto no-repeat;
+}
+.math .formulaTable_2 {
+	width: 243px;
+	height: 183px;
+	box-sizing: border-box;
+	background: url(../images/math/formulaTable_2.png) 0 0 / 100% auto no-repeat;
+	display: inline-block;
+	flex-shrink: 0;
+}
+.math .formulaTable_3 {
+	position: relative;
+}
+.math .formulaTable_3 fomula {
+	border: 1px solid #BBBDC0;
+}
+.math .formulaTable_3 fomula > ul:not(:last-of-type) {
+	border-bottom: 1px solid #BBBDC0;
+}
+.math .formulaTable_3 fomula > ul:nth-last-of-type(2) {
+	border-bottom: none;
+}
+.math .formulaTable_3 fomula > ul:nth-last-of-type(2):after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	z-index: 1;
+	pointer-events: none;
+}
+.math .formulaTable_3 .remainder {
+	position: absolute;
+	top: -40px;
+	width: 25%;
+	font-size: 32px;
+	text-align: center;
+	padding: 0 0 2px;
+}
+.math .formulaTable_3 .remainder.pink {
+	background-color: #FEE8DE;
+}
+.math .formulaTable_3 .remainder.sky {
+	background-color: #DFF2F4;
+}
+.math .formulaTable_3 .remainder.green {
+	background-color: #E0F1E6;
+}
+.math .formulaTable_3 .remainder.hasToggle {
+	top: -52px;
+	padding: 6px 0 8px;
+}
+.math .formulaTable_3 fomula > ul > li:not(:last-of-type) {
+	border-right: 1px solid #BBBDC0;
+}
+.math .formulaTable_3.rightPink fomula > ul > li:last-of-type {
+	background-color: #FEE8DE;
+}
+.math .formulaTable_3.centerSky fomula > ul > li:nth-last-of-type(2) {
+	background-color: #DFF2F4;
+}
+.math .formulaTable_3.leftGreen fomula > ul > li:nth-last-of-type(3) {
+	background-color: #E0F1E6;
+}
+.math .diagonal {
+	position: absolute;
+	width: 2px;
+	height: 50px;
+	background-color: #eb048e;
+	transform: rotate(
+			35deg);
+}
+.math .diagonal.blue {
+	background-color: #0080FF;
+}
+.math .diagonal.black {
+	background-color: #333333;;
+}
+/* 분수 type1 */
+h1 .fraction {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1em;
+	padding: 0 10px 0 6px;
+	text-align: center;
+}
+
+h1 .fraction span {
+	display: inline-block;
+	font-family: 'SCDreamH', sans-serif !important;
+	padding: 0 2px 0.1em 2px;
+}
+
+h1 .fraction>span:first-of-type {
+	width: 100%;
+}
+h1 .fraction>span:last-of-type {
+	border-top: 4px solid;
+	width: 100%;
+}
+
+.contentsBox .fraction {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1em;
+	padding: 0 5px 0 0;
+	text-align: center;
+}
+
+.contentsBox .fraction span {
+	display: inline-block;
+	font-family: 'NotoB', sans-serif !important;
+	padding: 0 2px 0.1em 2px;
+}
+
+.contentsBox .fraction>span:first-of-type {
+	width: 100%;
+}
+.contentsBox .fraction>span:last-of-type {
+	border-top: 3px solid #000;
+	width: 100%;
+}
+
+/* 분수 */
+.bunsuContainer {
+	font-size: inherit;
+}
+.bunsuContainer.mb-10 { margin-bottom: -10px; }
+.bunsuContainer.mb-20 { margin-bottom: -20px; }
+.bunsuContainer.mb-30 { margin-bottom: -30px; }
+.bunsuContainer.inline { display: inline-block; }
+.bunsuContainer .bunsu {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 2px;
+	margin: -6px 0 0;
+	text-align: center;
+	font-size: inherit;
+	line-height: 1em;
+}
+header .bunsuContainer .bunsu > li:nth-of-type(1) {
+	padding: 3px 0;
+	border-bottom: 3px solid;
+}
+.bunsuContainer .bunsu > li:nth-of-type(1) {
+	padding: 3px 0;
+	border-bottom: 3px solid #000000;
+}
+.bunsuContainer .bunsu > li {
+	position: relative;
+	min-width: 0.8em;
+}
+.bunsuContainer .bunsu > li.line:after {
+	content: '';
+	position: absolute;
+	width: 36px;
+	height: 3px;
+	top: 18px;
+	left: 50%;
+	transform-origin: left center;
+	background-color: #E94D40;
+	transform: rotate(-50deg) translate(-50%);
+}
+.bunsuContainer .bunsu > li .subText {
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.contentsTitle .bunsuContainer .bunsu:after {
+	background-color: #fff;
+}
+.bunsuContainer .answer .bunsu > li:nth-of-type(1),
+.answer .bunsuContainer .bunsu > li:nth-of-type(1),
+.answer.bunsuContainer .bunsu > li:nth-of-type(1) {
+	border-color: #0080FF;
+}
+
+/* bunsu layout */
+.bunsuContainer .bullet.exam {
+	margin: 0.93em 0.3em 0 0;
+}
+h1 .bunsuContainer {
+	display: flex;
+	align-items: center;
+}
+h2 .bunsuContainer {
+	margin: -6px 0 0 0;
+}
+h2 .bunsuContainer .bunsu {
+	margin: -12px 0 0;
+}
+.bunsuContainer.inToggle .bunsu > li {
+	box-sizing: border-box;
+}
+.bunsuContainer.inToggle .bunsu > li:nth-of-type(1) {
+	height: 44px;
+	padding: 0;
+}
+.bunsuContainer.inToggle .bunsu > li:nth-of-type(2) {
+	padding: 3px 0 0 0;
+	height: 47px;
+}
+.bunsuContainer.inToggle .toggle {
+	padding: 4px 12px;
+	display: inline-block;
+}
+.bunsuContainer.inToggle .toggle:after {
+	width: 36px;
+	height: 36px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.bunsuContainer.inToggle .bunsu.withToggle.integer {
+	margin-top: -8px;
+}
+.bunsuContainer.inToggle .bunsu.withToggle > li:nth-of-type(1) {}
+.bunsuContainer.inToggle .bunsu.withToggle > li:nth-of-type(2) {}
+.bunsuContainer.inToggle .bunsu.withToggle .toggle {line-height: 1;}
+.bunsuContainer.inToggle .bunsu.withToggle > li:nth-of-type(1) .toggle {top: -5px;}
+.bunsuContainer.inToggle .bunsu.withToggle > li:nth-of-type(2) .toggle {}
+.bunsuContainer.inToggle symbol {
+	margin: -12px 4px 0;
+	vertical-align: middle;
+}
+.contentsList .bunsuContainer {
+	margin: -10px 0 0 0;
+}
+#wrap header .title.mt:before {
+	top: 5px;
+}
+
+
+/* icon add */
+.icon_arrow.green2 {
+	width: 52px;
+	height: 40px;
+	background-image: url("../images/icon/icon_arrow_green.svg");
+}
+.icon_arrow.green3 {
+	width: 56px;
+	height: 53px;
+	background-image: url("../images/icon/icon_arrow_green2.svg");
+}
+
+
+
+/* 이미지 */
+figure {
+	position: relative;
+}
+figure img {
+	width: 100%;
+	vertical-align: top;
+}
+figure.height {}
+figure.height img {
+	width: auto;
+	height: 100%;
+}
+
+.imageContent {
+	position: relative;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+/* 풀이, 답 */
+.qBox.line_2 span.underLine {
+	position: absolute;
+	top: 47px;
+	left: 0;
+}
+.qBox.line_2 span.underLine+span.underLine {
+	top: 101px;
+	left: 0;
+}
+.qBox.line_2 .toggle:after {
+	z-index: 2;
+}
+.qBox.line_2 .toggle.box:not(.text){
+	margin-top: -4px;
+}
+.qBox.line_2 .toggle .answer.blue {
+	line-height: 55px;
+}
+.qBox.line_2 .toggle symbol {
+	margin: 15px 4px 0;
+	vertical-align: top;
+}
+
+/* icon */
+.icon_caption {
+	font-size: 21px;
+	padding: 4px 0 4px 70px;
+	background: url(../images/icon/icon_caption.svg) 0 4px/auto 26px no-repeat;
+}
+
+/* fomula Grid Paper*/
+.gridPaper {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	width: 1356px;
+	height: 190px;
+	padding: 2px 0;
+	background: url(../images/math/gridPaper.svg) center/contain no-repeat;
+	box-sizing: border-box;
+}
+.gridPaper fomula.horizonal {
+	height: 62px;
+}
+.gridPaper fomula.horizonal > symbol {
+	margin: 0 14px;
+}
+.gridPaper fomula.horizonal > *:not(symbol) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 100%;
+}
+.gridPaper fomula.vertical > ul > li,
+.gridPaper fomula.vertical.half > ul > li {
+	width: 54px;
+}
+.gridPaper fomula:nth-of-type(1) {
+	margin: 0px 108px 0 56px;
+}
+.gridPaper .toggle,
+.gridPaper .toggle .answer {
+	padding: 0;
+}
+.gridPaper .toggle .answer ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.gridPaper .toggle .answer ul > li {
+	flex: 1;
+	height: 60px;
+	line-height: 60px;
+}

@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+/* 블릿 */
+#wrap.math header h1 {
+	align-items: center;
+}
+#wrap.math.prevExplore header h1 {
+	padding-left: 5px;
+}
+#wrap.math.prevExplore header h1::before {
+	content: '';
+	position: relative;
+	top: -9px;
+	width: 67px;
+	height: 70px;
+	background: url(../../contents/images/icon/icon_lightLamp.svg) 0px 0px/contain no-repeat;
+	padding-right:28px;
+}
+#wrap.math header h1 > span.icon_paint::before {
+	content: '';
+	display: inline-block;
+	width: 71px;
+	height: 59px;
+	background: url(../../contents/images/icon/icon_paint.svg) 0px 0px/contain no-repeat;
+	padding-right: 20px;
+}
+#wrap.math.finalQuiz header h1::before{
+	content: '';
+	width: 60px;
+	height: 60px;
+	background: url(../../contents/images/icon/icon_target.svg) 0px 0px/contain no-repeat;
+	padding-right:28px;
+}
+#wrap.math.selfBack header h1 {
+	padding-left: 17px;
+}
+#wrap.math.selfBack header h1 .icon_bookSky {
+	width: 63px;
+	height: 48px;
+	background: url(../../contents/images/icon/icon_book_sky.svg) 0px 0px/contain no-repeat;
+	padding-right: 28px;
+}
+#wrap.math.zoom header h1 {
+	padding-left: 20px;
+}
+#wrap.math.zoom header h1 .icon_zoom {
+	width: 48px;
+	height: 48px;
+	background: url(../../contents/images/icon/icon_zoom.svg) 0px 0px/contain no-repeat;
+	padding-right: 18px;
+}
+#wrap.math.learn header h1 {
+	padding-left: 12px;
+}
+#wrap.math.learn header h1 .icon_write {
+	width: 45px;
+	height: 43px;
+	background: url(../../contents/images/icon/icon_write.svg) 0px 0px/contain no-repeat;
+	padding-right: 22px;
+}
+#wrap.math.numQuiz header h1 {
+	padding-left: 0;
+}
+#wrap.math.numQuiz header h1 .icon_num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 69px;
+	height: 99px;
+	text-align: center;
+	box-sizing: border-box;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 20px;
+}
+#wrap.math.numQuiz header h1 .icon_num.num_1 {background-image: url(../../contents/images/icon/icon_num_1.svg)}
+#wrap.math.numQuiz header h1 .icon_num.num_2 {background-image: url(../../contents/images/icon/icon_num_2.svg)}
+#wrap.math.numQuiz header h1 .icon_num.num_3 {background-image: url(../../contents/images/icon/icon_num_3.svg);}
+#wrap.math.numQuiz header h1 .icon_num.num_4 {background-image: url(../../contents/images/icon/icon_num_4.svg)}
+#wrap.math.numQuiz header h1 .icon_num.num_5 {background-image: url(../../contents/images/icon/icon_num_5.svg)}
+#wrap.math.numQuiz header h1 .icon_num.num_6 {background-image: url(../../contents/images/icon/icon_num_6.svg)}
+#wrap.math.numQuiz header h1 .icon_num.num_7 {background-image: url(../../contents/images/icon/icon_num_7.svg)}
+
+#wrap.math.act header h1 {
+	padding-left: 0;
+}
+#wrap.math.act header h1 .icon_act {
+	width: 143px;
+	height: 95px;
+	flex-shrink: 0;
+	margin-right: 20px;
+	background-size: 100% 95px;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+#wrap.math.act header h1 .icon_act.num_1 {background-image: url(../images/icon/icon_act_1.svg)}
+#wrap.math.act header h1 .icon_act.num_2 {background-image: url(../images/icon/icon_act_2.svg)}
+#wrap.math.act header h1 .icon_act.num_3 {background-image: url(../images/icon/icon_act_3.svg);}
+#wrap.math.act header h1 .icon_act.num_4 {background-image: url(../images/icon/icon_act_4.svg)}
+#wrap.math.act header h1 .icon_act.num_5 {background-image: url(../images/icon/icon_act_5.svg)}
+#wrap.math.act header h1 .icon_act.num_6 {background-image: url(../images/icon/icon_act_6.svg)}
+#wrap.math.confirm header h1 {
+	padding-left: 0;
+}
+#wrap.math.confirm header h1 .icon_confirm {
+	width: 143px;
+	height: 95px;
+	flex-shrink: 0;
+	background-position: center;
+	background-size: 100% 95px;
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	box-sizing: border-box;
+}
+#wrap.math.confirm header h1 .icon_confirm.num_1 {background-image: url(../images/icon/icon_confirm_1.svg)}
+#wrap.math.confirm header h1 .icon_confirm.num_2 {background-image: url(../images/icon/icon_confirm_2.svg)}
+
+#wrap.math header h1 .icon_dice {
+	width: 80px;
+	height: 95px;
+	flex-shrink: 0;
+	background-position: bottom;
+	background-size: 90% 85px;
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	box-sizing: border-box;
+}
+#wrap.math header h1 .icon_dice {background-image: url(../images/icon/icon_dice.svg);}
+
+/* 배운 내용 */
+h1 .icon_light {
+	width: 70px;
+	height: 72px;
+	margin-right:20px;
+	background: url(../../contents/images/icon/icon_light2.svg) center/contain no-repeat;
+}
+h1 .icon_memo {
+	width: 58px;
+	height: 72px;
+	margin-right:20px;
+	background: url(../../contents/images/icon/icon_memo.svg) center/contain no-repeat;
+}
+h1 .icon_park {
+	width: 58px;
+	height: 72px;
+	margin-right:20px;
+	background: url(../../contents/images/icon/icon_park.svg) center/contain no-repeat;
+}
+
+/* circle */
+.math .bullet.beige,
+.math .oxBoxListContainer > li .bullet.beige,
+.math .multipleChoiceList .bullet.beige {
+	width: 50px;
+	height: 50px;
+	font-size: 36px;
+	line-height: 50px;
+	color: #7C7056;
+	background-color: #ECE7D9;
+}
+.math h1 .bullet.beige,
+.math h1 .oxBoxListContainer > li .bullet.beige,
+.math h1 .multipleChoiceList .bullet.beige {
+	margin-top: 7px;
+}
+.math .toggle .bullet.darkGray {
+	color: #ECE7D9;
+	margin-top: 4px;
+	background-color:#7C7056;
+}
+.math .bullet.blue {
+	width: 50px;
+	height: 50px;
+	font-size: 36px;
+	line-height: 50px;
+	color: #0f7de7;
+	background-color: #ECE7D9;
+}
+
+/* 직접 쓰기 */
+h1 .human {
+	width: 18px;
+	height: 18px;
+	background: url(../../contents/images/icon/icon_human.svg) left center/auto 18px no-repeat;
+}
+
+/* 더블 dot */
+h1 .doubleDot {
+	position: relative;
+}
+h1 .doubleDot::after {
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: 11px;
+	width: 60px;
+	height: 16px;
+	background: url(../images/icon/dot_duble.svg) center/contain no-repeat;
+}
+.icon.duKnow {
+	width: 68px;
+	height: 69px;
+	background: url(../images/icon/icon_know.svg) left center/contain no-repeat;
+}
+
+/* 규칙 */
+.rule {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 88px;
+	height: 50px;
+	font-size: 25px;
+	color: #fff;
+	font-family: YGJAL;
+	background: url(../images/icon/icon_rule.svg) center/contain no-repeat;
+	padding: 0 10px 0 0;
+	box-sizing: border-box;
+}
+
+/* dot */
+.math .dotList > li:before {
+	width: 12px;
+	height: 12px;
+	margin: 0.45em 10px 0 0;
+}
+.math .toggle .dotList > li:before {
+	width: 12px;
+	height: 12px;
+	margin: 0.55em 10px 0 0;
+}
+
+
+/* */
+.math .imgBullet {
+	height: 74px;
+	font-size: 36px;
+	line-height: 78px;
+	color: #000;
+	flex-shrink: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'NotoB', sans-serif;
+	box-sizing: border-box;
+}
+.math .imgBullet.bg_beige {
+	width: 54px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 12px 12px 0;
+	background: url(../images/icon/bg_beige.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_beige_l {
+	width: 176px;
+	height: 66px;
+	background: url(../images/icon/bg_beige_l.svg) 0 0/contain no-repeat;
+	padding: 0 0 6px 0;
+}
+
+.imgBullet.bg_beige_l {}
+.math .imgBullet.bg_beige2 {
+	width: 148px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 6px 14px 0;
+	background: url(../images/icon/bg_beige2.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_beige3 {
+	width: 69px;
+	height: 68px;
+	background: url(../images/icon/bg_beige3.svg) 0 0/contain no-repeat;
+	padding: 0 6px 3px 0;
+}
+.math .imgBullet.bg_beige4 {
+	width: 80px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 3px 18px 0;
+	background: url(../images/icon/bg_beige4.svg) 0 0/contain no-repeat;
+}
+
+.math .imgBullet.bg_green {
+	width: 72px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 5px 10px 0;
+	background: url(../images/icon/bg_green.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_green2 {
+	width: 90px;
+	background: url(../images/icon/bg_green2.svg) 0 0/contain no-repeat;
+	padding: 0 0 13px 0;
+}
+
+.math .imgBullet.bg_mint {
+	width: 54px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 12px 12px 0;
+	background: url(../images/icon/bg_mint.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_mint2 {
+	width: 172px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 6px 14px 0;
+	background: url(../images/icon/bg_mint2.png) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_mint3 {
+	width: 80px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 3px 18px 0;
+	background: url(../images/icon/bg_mint3.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_mint4 {
+	width: 101px;
+	height: 68px;
+	background: url(../images/icon/bg_mint4.svg) 0 0/contain no-repeat;
+	padding: 0 0 15px 0;
+}
+.math .imgBullet.bg_mint5 {
+	width: 143px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 6px 14px 0;
+	background: url(../images/icon/bg_mint5.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_mint6 {
+	width: 176px;
+	height: 66px;
+	background: url(../images/icon/bg_mint6.svg) 0 0/contain no-repeat;
+	padding: 0 0 6px 0;
+}
+.math .imgBullet.bg_mint7 {
+	width: 65px;
+	height: 68px;
+	background: url(../images/icon/bg_mint7.svg) 0 0/contain no-repeat;
+	padding: 0 6px 10px 0;
+}
+.math .imgBullet.bg_sky {
+	width: 80px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 3px 18px 0;
+	background: url(../images/icon/bg_sky.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_sky2 {
+	width: 148px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 6px 14px 0;
+	background: url(../images/icon/bg_sky2.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_sky3 {
+	width: 54px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 12px 12px 0;
+	background: url(../images/icon/bg_sky3.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_sky4 {
+	width: 72px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 5px 10px 0;
+	background: url(../images/icon/bg_sky4.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_sky5 {
+	width: 90px;
+	background: url(../images/icon/bg_sky5.svg) 0 0/contain no-repeat;
+	padding: 0 0 7px 0;
+}
+.math .imgBullet.bg_sky6 {
+	width: 101px;
+	height: 68px;
+	padding: 0 0 15px 0;
+	background: url(../images/icon/bg_sky6.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_sky7 {
+	width: 176px;
+	height: 66px;
+	background: url(../images/icon/bg_sky7.svg) 0 0/contain no-repeat;
+	padding: 0 0 6px 0;
+}
+.math .imgBullet.bg_sky8 {
+	width: 65px;
+	height: 68px;
+	background: url(../images/icon/bg_sky8.svg) 0 0/contain no-repeat;
+	padding: 0 6px 10px 0;
+}
+.math .imgBullet.bg_orange {
+	width: 58px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 4px 14px 0;
+	background: url(../images/icon/bg_orange.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_orange2 {
+	width: 67px;
+	height: 68px;
+	background: url(../images/icon/bg_orange2.svg) 0 0/contain no-repeat;
+	padding: 0 0 3px 5px;
+}
+.math .imgBullet.bg_purple {
+	width: 56px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 12px 12px 0;
+	background: url(../images/icon/bg_purple.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_purple2 {
+	width: 148px;
+	height: 58px;
+	font-size: 28px;
+	padding: 0 6px 14px 0;
+	background: url(../images/icon/bg_purple2.svg) 0 0/contain no-repeat;
+}
+.math .imgBullet.bg_purple3 {
+	width: 181px;
+	height: 66px;
+	background: url(../images/icon/bg_purple3.svg) 0 0/contain no-repeat;
+	padding: 0 0 6px 0;
+}
+.math .imgBullet.bg_purple4 {
+	width: 69px;
+	height: 68px;
+	background: url(../images/icon/bg_purple4.svg) 0 0/contain no-repeat;
+	padding: 0 0 6px 0;
+}
+.math .imgBullet.mic,
+.math .imgBullet.pen {
+	width: 134px;
+	height: 56px;
+}
+.math .imgBullet.mic {
+	margin: 1px 0 0;
+	background: url("../images/icon/ico_mic.svg") center/contain no-repeat;
+}
+.math .imgBullet.pen {
+	background: url("../images/icon/ico_pen.svg") center/contain no-repeat;
+}
+
+.math .qBox .imgBullet {
+	margin: -3px 0 0;
+}

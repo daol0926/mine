@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.icon_active {
+  position: static;
+  display: inline-block;
+  height: 75px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+li[class*="page"] section{
+  padding:0 144px;
+}
+li[class*="page"] section .li_answer{
+  margin-left:0;
+}
+
+/* page1 */
+.innerPage_1 .flex-box>.right{
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.innerPage_1 .flex-box .bal_01{
+  width: 300px;
+  top: 25px;
+  right: 50px;
+}
+.innerPage_1 .flex-box>.left{
+  flex-flow: column;
+  padding: 30px 50px;
+}
+.innerPage_1 .flex-box>.left .flex-box.mt_20{
+  justify-content: space-around;
+  width: 100%;
+}
+.innerPage_1 .img{
+  max-height:200px;
+}
+.innerPage_1 .char{
+  max-height:300px;
+}
+.innerPage_2 .scroll_container{
+  height:545px;
+}
+.innerPage_2 .tableContainer th{
+  word-break: keep-all;
+}
+
+.tableContainer table td, 
+.tableContainer table th {
+  padding: 12px 14px;
+}
+
+/* page2 */
+.page2 .toggle.examAnswer{
+  position:absolute;
+  left: 223px;
+  top: 165px;
+  width: 986px;
+}
+.page2 .toggle.examAnswer .answer>div {
+  margin-bottom: 20px;
+}
+.page2 .toggle.examAnswer .answer>div>span{
+  width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -5px;
+  height: 55px;
+  margin-bottom: 6px;
+}
+.page2 .point_txt{
+  text-align: right;
+  display: block;
+}
+.page2 .answer .point_txt{
+  position:absolute;
+  right: -55px;
+margin-top: 3px;}
+
+/* page3 */
+.page3 section{
+  background: url(../images/SOC_42_02_0708_A_06/SOC_42_02_0708_A_06_05.png) no-repeat center left 33%/auto 100%;
+  height:600px;
+}
+.page3 .bal_01{
+  right: 20%;
+  top: 26%;
+}
+.page3 .toggle.examAnswer {
+  background-color: #fff;
+  border: 2px dashed #ff8359;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-top: 0;
+  /* background-color: transparent; */
+}
+
+/* page4 */
+.page4 .flex-box{
+  justify-content: center;
+}
+.page4 .colorBox{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  margin:0 1%;
+  position: relative;
+  height: 200px;
+  margin-top: 80px;
+}
+.page4 .colorBox .img{
+  height:200px;
+  position: absolute;
+  top: -100px;
+}

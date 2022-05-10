@@ -1,0 +1,24 @@
+@charset "utf-8";
+#wrap.quiz.final main {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#wrap.quiz.final .final_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../images/finalQuiz/bg.png) center/ 100% auto no-repeat;
+  z-index: 2;
+}
+#wrap.quiz.final .start_btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../images/finalQuiz/bg.png) center/ 100% auto no-repeat;
+  z-index: 2;
+}

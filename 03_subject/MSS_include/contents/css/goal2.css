@@ -1,0 +1,537 @@
+
+.soc.goal main {
+	background: url(../images/goal/bg_goal_soc2.svg) center/ 100% auto no-repeat;
+}
+.sci.goal main {
+  background: url(../images/goal/bg_goal_sci2.svg) center/ 100% auto no-repeat;
+}
+.math.AHN_math.goal main {
+  background: url(../images/goal/bg_goal_mathAHN.svg) center/ 100% auto no-repeat;
+}
+.math.PAR_math.goal main {
+  background: url(../images/goal/bg_goal_mathPAR.svg) center/ 100% auto no-repeat;
+}
+.goal .contentsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 260px 220px 230px 220px;
+  width: 100%;
+  height: 100%;
+  font-size: 65px;
+  font-family: 'BMJUA';
+  text-align: center;
+}
+
+.math.PAR_math.goal .contentsBox {
+	padding: 260px 220px 185px 220px;
+}
+.math.AHN_math.goal .contentsBox {
+	padding: 230px 220px 200px 220px;
+}
+.goal.soc .contentsBox {padding: 180px 280px 230px 280px;}
+.goal.sci .contentsBox {padding: 260px 220px 190px 220px;}
+
+
+.goal.soc em { color: #f26177; }
+.goal.sci em { color: #00a68a; }
+.goal.math em { color: #007ED8; }
+
+
+.goal.dotList > li:before {
+	content: "";
+	flex-shrink: 0;
+	align-self: flex-start;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0.45em 10px 0 0;
+	background-color: #333333;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+#wrap.goal .basicSlider_slides > li > ul,
+#wrap.goal .basicSlider_slides > li .goalBox .dotList {
+	padding: 0 30px;
+}
+#wrap.goal .dotList > li:before,
+#wrap.goal .goalBox .dotList > li:before {
+	margin-top: 0.48em;
+}
+
+
+.goal .basicSlider_tabs {
+	top: auto;
+	right: auto;
+	bottom: 0;
+	left: 50%;
+	height: 65px;
+	transform: translate(-50%);
+}
+#wrap.goal .basicSlider_tabs > li {
+	width: 237px;
+	height: 65px;
+	margin: 0;
+	line-height: 65px;
+	font-size: 31px;
+	font-family: 'SCDreamB', sans-serif;
+  color: #fff;
+	opacity: 0.6;
+	/* background: url(../images/button/btn_thisTime_tab.svg) center bottom/100% no-repeat; */
+}
+#wrap.goal .basicSlider_tabs > li {
+	opacity: 1;
+}
+
+
+/* 사회 */
+#wrap.goal.soc .basicSlider_tabs > li {
+	background: url("../images/button/btn_thisTime_tab_soc.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+#wrap.goal.soc .basicSlider_tabs > li.on {
+	background: url("../images/button/btn_thisTime_tab_soc_on.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+/* 과학 */
+#wrap.goal.sci .basicSlider_tabs > li {
+	background: url("../images/button/btn_thisTime_tab_sci.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+#wrap.goal.sci .basicSlider_tabs > li.on {
+	background: url("../images/button/btn_thisTime_tab_sci_on.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+/* 수학 */
+#wrap.goal.math .basicSlider_tabs > li {
+	background: url("../images/button/btn_thisTime_tab_math.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+#wrap.goal.math .basicSlider_tabs > li.on {
+	background: url("../images/button/btn_thisTime_tab_math_on.svg") center bottom/100% no-repeat;
+	z-index: 1;
+}
+
+
+#wrap.goal .basicSlider_tabs > li.on:before,
+#wrap.goal .basicSlider_tabs > li.on:after,
+#wrap.goal .basicSlider_tabs > li:nth-of-type(1):before { content: none; }
+#wrap.goal .basicSlider_tabs[data-no-line] > li[data-prev],
+#wrap.goal .basicSlider_tabs[data-no-line] > li.on + *,
+#wrap.goal .basicSlider_tabs > li:last-of-type.on {
+	padding: 0;
+	margin: 0;
+}
+#wrap.goal .basicSlider_tabs > li:nth-of-type(1).on { margin-right: -55px; }
+#wrap.goal .basicSlider_tabs > li:nth-of-type(2).on { margin-left: -55px; }
+#wrap.goal .basicSlider_tabs > li:last-child:after,
+#wrap.goal .basicSlider_tabs > li.on:after {
+  background-position: right center;
+  background-color: transparent !important;
+  background-image: none;
+}
+
+
+.goal .contentsBox .basicSlider_slides > li {
+	align-items: center;
+	justify-content: center;
+}
+.AHN_math.goal .contentsBox .basicSlider_slides > li {
+	/* text-align: justify; */
+}
+.goal .contentsBox .basicSlider_slides > li textarea {
+	width: 100%;
+	height: 100%;
+	font-size: 52px;
+	padding: 20px 20px;
+	border-radius: 10px;
+	font-family: inherit;
+	/* background-color: #F4F1E6; */
+}
+.goal.sci .contentsBox ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #a3c8c2 !important;
+}
+.goal.sci .contentsBox ::-moz-placeholder { /* Firefox 19+ */
+	color: #a3c8c2 !important;
+}
+.goal.sci .contentsBox :-ms-input-placeholder { /* IE 10+ */
+	color: #a3c8c2 !important;
+}
+.goal.sci .contentsBox :-moz-placeholder { /* Firefox 18- */
+	color: #a3c8c2 !important;
+}
+
+
+
+/* ------------- 이번 시간에 배울 내용 ----------- */
+.soc.goal.todayTime main {
+	background: url(../images/goal/bg_todayTime_soc2.svg) center/ contain no-repeat;
+}
+.sci.goal.todayTime main {
+	background: url(../images/goal/bg_todayTime_sci2.svg) center/ contain no-repeat;
+}
+.math.AHN_math.goal.todayTime main {
+	background: url(../images/goal/bg_todayTime_mathAHN.svg) center/ contain no-repeat;
+}
+.math.PAR_math.goal.todayTime main {
+	background: url(../images/goal/bg_todayTime_mathPAR.svg) center/ contain no-repeat;
+}
+.goal.todayTime.AHN_math .contentsBox {
+	align-items: center;
+	padding: 135px 290px 60px 155px;
+}
+.goal.todayTime.PAR_math .contentsBox {
+	align-items: center;
+	padding: 213px 230px 123px 230px;
+}
+.soc.goal.todayTime .contentsBox {
+	align-items: flex-start;
+	padding: 260px 50px 230px 570px;
+	justify-content: flex-start;
+}
+.sci.goal.todayTime .contentsBox {
+	flex-direction: column;
+	padding: 170px 210px 166px 210px;
+}
+.sci.goal.todayTime .contentsBox.list {
+	display: block;
+	padding: 260px 210px 260px 210px;
+}
+.goal.todayTime .contentsBox.a-center {
+	align-items: center;
+}
+.goal.todayTime h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* height: 190px; */
+	margin-bottom: 52px;
+	font-size: 80px;
+	font-family: YGJAL;
+	color: #b3364a;
+}
+
+.AHN_math.goal.todayTime h1 {
+	margin-bottom: 30px;
+}
+.PAR_math.goal.todayTime h1 {
+	margin-bottom: 30px;
+}
+.math.goal.todayTime h1 { color: #355FB2; }
+.math.goal.todayTime h1 .mathIh {
+	display: block;
+	line-height: 1;
+	font-size: 75px;
+	color: #003366;
+	margin-bottom: 12px;
+}
+.soc.goal.todayTime h1 {
+	height: auto;
+	color: #b3364a;
+	align-items: flex-start;
+	text-align: left;
+  font-size: 72px;
+}
+.sci.goal.todayTime h1 {
+	color: #1f8070;
+	font-size: 70px;
+	letter-spacing: -3.5px;
+	margin-bottom: 22px;
+}
+.goal.todayTime h1 > ins.number,
+.goal.nextTime h1 > ins.number {
+	display: inline-flex;
+	/* align-self: auto; */
+	align-self: flex-start;
+	top: 2px;
+	width: 82px;
+	height: 82px;
+	margin-right: 24px;
+	border-radius: 20px;
+	font-size: 56px;
+}
+.goal.todayTime h1 > ins.number.a-start,
+.goal.nextTime h1 > ins.number.a-start {
+	align-self: flex-start;
+	top: 1px;
+}
+.soc.goal.todayTime h1 > ins.number, .soc.goal.nextTime h1 > ins.number {
+	background-color: #b3364a;
+}
+
+.goal.todayTime .contentsBox h2 {
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 80px;
+  font-family: 'BMJUA';
+}
+.sci.goal.todayTime .contentsBox h2 {
+	padding: 0 0px;
+}
+.sci.goal.todayTime .contentsBox h2 {
+	display: block;
+	font-size: 90px;
+	font-family: 'BMJUA';
+	color: #595959;
+	letter-spacing: -3.5px;
+}
+.sci.goal.todayTime .contentsBox h2 > span {
+	display: inline-flex;
+	/* align-items: center; */
+	justify-content: center;
+	position: relative;
+	top: -4px;
+	width: 104px;
+	height: 83px;
+	margin-right: 20px;
+	border-radius: 20px;
+	background-color: #b4dbd4;
+	font-size: 75px;
+	line-height: 1.2em;
+}
+.sci.goal.todayTime ul.dotList {
+  padding: 0 90px;
+	font-size: 90px;
+	font-family: 'BMJUA';
+	letter-spacing: -3.5px;
+	color: #595959;
+}
+.sci.goal.todayTime ul.dotList > li:before {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 0.55em 10px 0 0;
+	background-color: #595959;
+}
+
+.soc.goal.todayTime .contentsBox h2 {
+  font-size: 72px;
+}
+
+.math.goal.todayTime .contentsBox h2 {
+	justify-content: center;
+	padding: 0;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 80px;
+  font-family: 'BMJUA';
+	color: #333333;
+}
+.math.goal.todayTime .contentsBox h3 {
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 65px;
+  font-family: 'BMJUA';
+	color: #595959;
+}
+.math.goal.todayTime .contentsBox h3.mathIhTitle {
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 65px;
+  font-family: 'BMJUA';
+	color: #595959;
+	/* margin-top: -32px */
+}
+.soc.goal.todayTime .contentsBox h3 {
+	justify-content: center;
+	text-align: center;
+	font-size: 70px;
+  font-family: 'BMJUA';
+	color: #666666;
+}
+.goal.todayTime .contentsBox p {
+	justify-content: center;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 50px;
+  font-family: 'BMJUA';
+}
+
+
+/* ------------- 다음 시간에 배울 내용 ----------- */
+.math.PAR_math.goal.nextTime main {
+	background: url(../images/goal/bg_nextTime_mathPAR.svg) center/ contain no-repeat;
+}
+.math.AHN_math.goal.nextTime main {
+	background: url(../images/goal/bg_nextTime_mathAHN.svg) center/ contain no-repeat;
+}
+.soc.goal.nextTime main {
+	background: url(../images/goal/bg_nextTime_soc2.svg) center/ contain no-repeat;
+}
+.sci.goal.nextTime main {
+	background: url(../images/goal/bg_nextTime_sci2.svg) center/ contain no-repeat;
+}
+
+.goal.nextTime .contentsBox {
+	align-items: flex-start;
+	/* padding: 270px 265px 320px 265px; */
+
+  padding: 210px 220px 230px 220px;
+}
+.PAR_math.goal.nextTime .contentsBox {
+	align-items: center;
+	padding: 170px 278px 250px 278px;
+}
+.AHN_math.goal.nextTime .contentsBox {
+	align-items: center;
+	padding: 0 20px 0 460px;
+}
+.goal.nextTime .contentsBox.a-center {
+	align-items: center;
+}
+/* .math.goal.nextTime .contentsBox.up {
+	align-items: flex-start;
+	padding: 189px 220px 230px 220px;
+} */
+.soc.goal.nextTime .contentsBox {
+	padding: 260px 50px 230px 570px;
+	justify-content: flex-start;
+}
+.sci.goal.nextTime .contentsBox {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 180px 210px 68px 210px;
+}
+
+.goal.nextTime h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 190px;
+	margin-bottom: 52px;
+	text-align: center;
+	font-size: 80px;
+	font-family: YGJAL;
+	color: #333333;
+}
+.math.goal.nextTime h1 {
+	color: #355FB2;
+}
+.math.PAR_math.goal.nextTime h1,
+.math.AHN_math.goal.nextTime h1 {
+	margin-bottom: 0;
+}
+.math.goal.nextTime .up h1 {
+	height: 165px;
+	margin-bottom: 0;
+	color: #355FB2;
+}
+.math.goal.nextTime h2 {
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 80px;
+	color: #333333;
+	text-align: center;
+  font-family: 'BMJUA';
+	justify-content: center;
+}
+.soc.goal.nextTime h1 {
+	height:  auto;
+	color: #b3364a;
+	text-align: left;
+  font-size: 72px;
+}
+.soc.goal .contentsBox .subject {
+	display: flex;
+	width: 100%;
+	color: #333333;
+	font-family: 'BMJUA';
+	margin-bottom: 20px;
+}
+/* .sci.goal.nextTime h1 {
+	color: #1f8070;
+} */
+
+.sci.goal.nextTime h1 {
+	height: auto;
+	color: #1f8070;
+	font-size: 70px;
+	letter-spacing: -3.5px;
+	margin-bottom: 22px;
+}
+.sci.goal.nextTime .contentsBox h2 {
+	padding: 0 0px;
+}
+.sci.goal.nextTime .contentsBox h2 {
+	display: block;
+	font-size: 90px;
+	font-family: 'BMJUA';
+	color: #595959;
+	letter-spacing: -3.5px;
+	text-align: center;
+}
+.sci.goal.nextTime .contentsBox h2 > span {
+	display: inline-flex;
+	justify-content: center;
+	position: relative;
+	top: -4px;
+	width: 104px;
+	height: 83px;
+	margin-right: 20px;
+	border-radius: 20px;
+	background-color: #b4dbd4;
+  line-height: 1.2em;
+	font-size: 75px;
+  font-family: 'BMJUA';
+}
+.sci.goal.nextTime ul.dotList {
+	padding: 0 40px;
+  font-size: 90px;
+	font-family: 'BMJUA';
+	letter-spacing: -3.5px;
+	color: #595959;
+}
+.sci.goal.nextTime ul.dotList > li:before {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 0.55em 10px 0 0;
+	background-color: #595959;
+}
+/* .sci.goal.nextTime .contentsBox h2 {
+	padding: 0;
+	justify-content: center;
+	text-align: center;
+	font-size: 80px;
+  font-family: 'BMJUA';
+} */
+
+.goal.nextTime p {
+	font-size: 50px;
+  font-family: 'BMJUA';
+}
+.goal.nextTime p.big {
+	font-size: 80px;
+}
+
+
+/* ------------- 다음 시간에 배울 내용 ----------- */
+.sci.goal.lastTime main {
+	background: url(../images/goal/bg_lastTime_sci.svg) center/ contain no-repeat;
+}
+.soc.goal.lastTime main {
+	background: url(../images/goal/bg_lastTime_soc.svg) center/ contain no-repeat;
+}
+
+.goal.lastTime main .contentsBox {
+	position: absolute;
+	top: 130px;
+	left: 171px;
+	width: 800px;
+	height: 340px;
+	padding: 0;
+	font-family: YGJAL;
+	font-size: 63px;
+	color: #1f8070;
+}
+.sci.goal.lastTime main .contentsBox {
+	color: #1f8070;
+}
+.soc.goal.lastTime main .contentsBox {
+	color: #b3364a;
+}

@@ -1,0 +1,588 @@
+/*
+    file name : $pAni.css
+    description : custom sprite animation object css file
+	create date : 2018-01-08
+	creator : saltgamer
+*/
+
+.characterImg {
+  position: absolute;
+  display:inline-block;
+}
+.characterImg.circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+[id*="spriteAni"] .characterImg {
+  cursor: pointer;
+}
+.charSpriteAni {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-position: 0 0;
+}
+/* 단일 이미지 */
+.charImg {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* --- */
+
+.arrowImg {
+  position: absolute;
+}
+.characterImg.charPosition.circle {
+  margin-bottom: 11px;
+}
+/*동그란 이미지*/
+.characterImg.circle > .charSpriteImg,
+.characterImg.circle > .charSpriteAni {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  width: 425px;
+  height: 510px;
+  transform-origin: center top;
+  transform: translate(-50%) scale(0.65) rotate(0.1deg) !important;
+}
+.charSpriteImg.boy_1 {
+  background-image: url('../../contents/images/character/boy_1.png');
+}
+.charSpriteImg.boy_2 {
+  background-image: url('../../contents/images/character/boy_2.png');
+}
+.charSpriteImg.girl_1 {
+  background-image: url('../../contents/images/character/girl_1.png');
+}
+.charSpriteImg.girl_2 {
+  background-image: url('../../contents/images/character/girl_2.png');
+}
+
+.charSpriteImg.winter_boy_1 {
+  background-image: url('../../contents/images/character/winter_boy_1.png');
+}
+.charSpriteImg.winter_boy_2 {
+  background-image: url('../../contents/images/character/winter_boy_2.png');
+}
+.charSpriteImg.winter_girl_1 {
+  background-image: url('../../contents/images/character/winter_girl_1.png');
+}
+.charSpriteImg.winter_girl_2 {
+  background-image: url('../../contents/images/character/winter_girl_2.png');
+}
+
+.charSpriteImg.woman{
+  width: 320px;
+  height: 510px;
+  background-image: url('../../contents/images/character/teacher_woman.png');
+}
+.charSpriteImg.man{
+  width: 270px;
+  height: 539px;
+  background-image: url('../../contents/images/character/teacher_man.png');
+}
+
+.charImg.boy_1 {
+  background-image: url('../../contents/images/character/boy_1_img.png');
+}
+.charImg.boy_2 {
+  background-image: url('../../contents/images/character/boy_2_img.png');
+}
+.charImg.boy_3 {
+  background-image: url('../../contents/images/character/boy_3_img.png');
+}
+.charImg.boy_4 {
+  background-image: url('../../contents/images/character/boy_4_img.png');
+}
+.charImg.boy_5 {
+  background-image: url('../../contents/images/character/boy_5_img.png');
+}
+.charImg.girl_1 {
+  background-image: url('../../contents/images/character/girl_1_img.png');
+}
+.charImg.girl_2 {
+  background-image: url('../../contents/images/character/girl_2_img.png');
+}
+.charImg.girl_3 {
+  background-image: url('../../contents/images/character/girl_3_img.png');
+}
+.charImg.girl_4 {
+  background-image: url('../../contents/images/character/girl_4_img.png');
+}
+.charImg.girl_5 {
+  background-image: url('../../contents/images/character/girl_5_img.png');
+}
+.charImg.woman {
+  background-image: url('../../contents/images/character/teacher_woman.png');
+}
+.charImg.man {
+  background-image: url('../../contents/images/character/teacher_man.png');
+}
+
+
+.charImg.winter_boy_1 {
+  background-image: url('../../contents/images/character/winter_boy_1_img.png');
+}
+.charImg.winter_boy_2 {
+  background-image: url('../../contents/images/character/winter_boy_2_img.png');
+}
+.charImg.winter_boy_3 {
+  background-image: url('../../contents/images/character/winter_boy_3_img.png');
+}
+.charImg.winter_boy_4 {
+  background-image: url('../../contents/images/character/winter_boy_4_img.png');
+}
+.charImg.winter_boy_5 {
+  background-image: url('../../contents/images/character/winter_boy_5_img.png');
+}
+
+.charImg.winter_girl_1 {
+  background-image: url('../../contents/images/character/winter_girl_1_img.png');
+}
+.charImg.winter_girl_2 {
+  background-image: url('../../contents/images/character/winter_girl_2_img.png');
+}
+.charImg.winter_girl_3 {
+  background-image: url('../../contents/images/character/winter_girl_3_img.png');
+}
+.charImg.winter_girl_4 {
+  background-image: url('../../contents/images/character/winter_girl_4_img.png');
+}
+.charImg.winter_girl_5 {
+  background-image: url('../../contents/images/character/winter_girl_5_img.png');
+}
+.charImg.winter_woman {
+  background-image: url('../../contents/images/character/winter_teacher_woman.png');
+}
+.charImg.winter_man {
+  background-image: url('../../contents/images/character/winter_teacher_man.png');
+}
+
+.charImg.circle {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: none;
+  background-color: #fff !important;
+}
+
+.charImg.circle.boy_1 {
+  background: url("../images/character/boy_1_face.svg") center/173px no-repeat;
+  border: 14px solid #A5CE39;
+}
+.charImg.circle.boy_2 {
+  background: url("../images/character/boy_2_face.svg") center/163px no-repeat;
+  border: 14px solid #4ECEBB;
+}
+.charImg.circle.boy_3 {
+  background: url(../images/character/boy_3_face.svg) center/178px no-repeat;
+  border: 14px solid #FFAC05;
+}
+.charImg.circle.boy_4 {
+  background: url(../images/character/boy_4_face.svg) 12px center/176px no-repeat;
+  border: 14px solid #FF8F7B;
+}
+.charImg.circle.boy_5 {
+  background: url(../images/character/boy_5_face.svg) center/202px no-repeat;
+  border: 14px solid #e885ce;
+}
+
+
+.charImg.circle.winter_boy_1 {
+  background: url("../images/character/winter_boy_1_face.svg") center/173px no-repeat;
+  border: 14px solid #A5CE39;
+}
+.charImg.circle.winter_boy_2 {
+  background: url("../images/character/winter_boy_2_face.svg") center/163px no-repeat;
+  border: 14px solid #4ECEBB;
+}
+.charImg.circle.winter_boy_3 {
+  background: url(../images/character/winter_boy_3_face.svg) center/178px no-repeat;
+  border: 14px solid #FFAC05;
+}
+.charImg.circle.winter_boy_4 {
+  background: url(../images/character/winter_boy_4_face.svg) 12px center/176px no-repeat;
+  border: 14px solid #FF8F7B;
+}
+.charImg.circle.winter_boy_5 {
+  background: url(../images/character/winter_boy_5_face.svg) center/202px no-repeat;
+  border: 14px solid #e885ce;
+}
+
+
+
+
+.charImg.circle.girl_1,
+.charImg.circle.winter_girl_1 {
+  border: 14px solid #FFAC05;
+}
+.charImg.circle.girl_1:after,
+.charImg.circle.winter_girl_1:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 226px;
+  height: 100%;
+  background: url(../images/character/girl_1_face.svg) 16px center/206px no-repeat;
+  pointer-events: none;
+}
+.charImg.circle.girl_2,
+.charImg.circle.winter_girl_2 {
+  border: 14px solid #FF8F7B;
+  background: url("../images/character/girl_2_face.svg") center/175px no-repeat;
+}
+.charImg.circle.girl_3,
+.charImg.circle.winter_girl_3 {
+  border: 14px solid #A5CE39;
+}
+.charImg.circle.girl_3:after,
+.charImg.circle.winter_girl_3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 199px;
+  height: 100%;
+  background: url(../images/character/girl_3_face.svg) 2px center/199px no-repeat;
+  pointer-events: none;
+}
+.charImg.circle.girl_4,
+.charImg.circle.winter_girl_4 {
+  border: 14px solid #4ECEBB;
+}
+.charImg.circle.girl_4:after,
+.charImg.circle.winter_girl_4:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -17px;
+  width: 245px;
+  height: 100%;
+  background: url(../images/character/girl_4_face.svg)center/245px no-repeat;
+  pointer-events: none;
+}
+.charImg.circle.girl_5,
+.charImg.circle.winter_girl_5 {
+  background: url(../images/character/girl_5_face.svg) 16px center/173px no-repeat;
+  border: 14px solid #e885ce;
+}
+
+
+.charImg.circle.winter_girl_1:after {
+  background: url(../images/character/winter_girl_1_face.svg) 16px center/206px no-repeat;
+}
+.charImg.circle.winter_girl_2 {
+  background: url(../images/character/winter_girl_2_face.svg) center/175px no-repeat;
+}
+.charImg.circle.winter_girl_3:after {
+  background: url(../images/character/winter_girl_3_face.svg) 2px center/199px no-repeat;
+}
+.charImg.circle.winter_girl_4:after {
+  background: url(../images/character/winter_girl_4_face.svg)center/245px no-repeat;
+}
+.charImg.circle.winter_girl_5 {
+  background: url(../images/character/winter_girl_5_face.svg) 16px center/173px no-repeat;
+}
+
+.charImg.circle.mini,
+.popup_container .charImg.circle {
+  width: 175px;
+  height: 175px;
+  border-width: 11px;
+}
+
+.charImg.mini.circle.boy_1,
+.charImg.mini.circle.winter_boy_1,
+.popup_container .charImg.circle.boy_1 {
+  background-size: 132px;
+}
+.charImg.mini.circle.boy_2,
+.charImg.mini.circle.winter_boy_2,
+.popup_container .charImg.circle.boy_2 {
+  background-size: 122px;
+}
+.charImg.mini.circle.boy_3,
+.charImg.mini.circle.winter_boy_3,
+.popup_container .charImg.circle.boy_3 {
+  background-size: 134px;
+}
+.charImg.mini.circle.boy_4,
+.charImg.mini.circle.winter_boy_4,
+.popup_container .charImg.circle.boy_4 {
+  background-size: 132px;
+  background-position-x: 10px;
+}
+.charImg.mini.circle.boy_5,
+.charImg.mini.circle.winter_boy_5,
+.popup_container .charImg.circle.boy_5 {
+  background-size: 150px;
+}
+.charImg.mini.circle.girl_1:after,
+.charImg.mini.circle.winter_girl_1:after,
+.popup_container .charImg.circle.girl_1:after {
+  width: 174px;
+  background-size: 157px;
+  background-position-x: 12px;
+}
+.charImg.mini.circle.girl_2,
+.charImg.mini.circle.winter_girl_2,
+.popup_container .charImg.circle.girl_2 {
+  background-size: 140px;
+}
+.charImg.mini.circle.girl_3:after,
+.charImg.mini.circle.winter_girl_3:after,
+.popup_container .charImg.circle.girl_3:after {
+  width: 150px;
+  background-size: 150px;
+  background-position-x: 2px;
+}
+.charImg.mini.circle.girl_4:after,
+.charImg.mini.circle.winter_girl_4:after,
+.popup_container .charImg.circle.girl_4:after {
+  width: 192px;
+  background-size: 186px;
+  background-position-x: 4px;
+}
+.charImg.mini.circle.girl_5,
+.charImg.mini.circle.winter_girl_5,
+.popup_container .charImg.circle.girl_5 {
+  background-size: 130px;
+  background-position-x: 13px;
+}
+
+
+.playSequenceButton {
+  position: absolute;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #ff8600 url(../../contents/images/icon/icon_play.svg) center / 100% auto no-repeat;
+  transform: translate(-50%);
+  cursor: pointer;
+  z-index:2;
+}
+.playSequenceButton.hover {
+  transform: translate(-50%) scale(0.96);
+}
+
+/* 수학 step 캐릭터 */
+
+.charImg[class *= "step_"] {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+}
+.charImg.step_1 {
+  background: url(../../contents/images/character/charStep_1.png) center/ 100% auto no-repeat;
+}
+.charImg.step_2 {
+  background: url(../../contents/images/character/charStep_2.png) center/ 100% auto no-repeat;
+}
+.charImg.step_3 {
+  background: url(../../contents/images/character/charStep_3.png) center/ 100% auto no-repeat;
+}
+.charImg.step_4 {
+  background: url(../../contents/images/character/charStep_4.png) center/ 100% auto no-repeat;
+}
+
+/* 캐릭터 얼굴  */
+.charImg_face_1 {
+	width: 81px;
+	height: 80px;
+	background: url(../../contents/images/character/char_face_1.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_2 {
+	width: 81px;
+	height: 80px;
+	background: url(../../contents/images/character/char_face_2.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_3 {
+	width: 83px;
+	height: 80px;
+	background: url(../../contents/images/character/char_face_3.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_4 {
+	width: 81px;
+	height: 80px;
+	background: url(../../contents/images/character/char_face_4.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_5 {
+	width: 86px;
+	height: 81px;
+	background: url(../../contents/images/character/char_face_5.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_6 {
+	width: 83px;
+	height: 80px;
+	background: url(../../contents/images/character/char_face_6.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_7 {
+	width: 81px;
+	height: 89px;
+	background: url(../../contents/images/character/char_face_7.svg) 0 0/100% auto no-repeat;
+}
+.charImg_face_8 {
+	width: 114px;
+	height: 94px;
+	background: url(../../contents/images/character/char_face_8.svg) 0 0/100% auto no-repeat;
+}
+
+/* 캐릭터 전신  */
+.charImg_whole_1 {
+	width: 99px;
+	height: 159px;
+	background: url(../../contents/images/character/char_whole_1.svg) 0 0/100% auto no-repeat;
+}
+.charImg_whole_2 {
+	width: 102px;
+	height: 159px;
+	background: url(../../contents/images/character/char_whole_2.svg) 0 0/100% auto no-repeat;
+}
+.charImg_whole_3 {
+	width: 102px;
+	height: 159px;
+	background: url(../../contents/images/character/char_whole_3.svg) 0 0/100% auto no-repeat;
+}
+.charImg_whole_4 {
+	width: 102px;
+	height: 158px;
+	background: url(../../contents/images/character/char_whole_4.svg) 0 0/100% auto no-repeat;
+}
+.charImg_whole_5 {
+	width: 99px;
+	height: 159px;
+	background: url(../../contents/images/character/char_whole_5.svg) 0 0/100% auto no-repeat;
+}
+
+
+/* 캐릭터 상의  */
+.charImg_top_1 {
+	width: 102px;
+	height: 124px;
+	background: url(../../contents/images/character/char_top_1.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_2 {
+	width: 92px;
+	height: 116px;
+	background: url(../../contents/images/character/char_top_2.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_3 {
+	width: 92px;
+	height: 116px;
+	background: url(../../contents/images/character/char_top_3.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_4 {
+	width: 105px;
+	height: 124px;
+	background: url(../../contents/images/character/char_top_4.svg) 0 0/100% auto no-repeat;
+}
+
+/* 캐릭터 상의 big */
+.charImg_top_1.big {
+	width: 125px;
+	height: 152px;
+	background: url(../../contents/images/character/char_top_1.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_2.big {
+	width: 112px;
+	height: 137px;
+	background: url(../../contents/images/character/char_top_2.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_3.big {
+	width: 112px;
+	height: 137px;
+	background: url(../../contents/images/character/char_top_3.svg) 0 0/100% auto no-repeat;
+}
+.charImg_top_4.big {
+  width: 128px;
+	height: 152px;
+	background: url(../../contents/images/character/char_top_4.svg) 0 0/100% auto no-repeat;
+}
+
+
+/* 캐릭터 활동  */
+.char_activity_1 {
+	width: 245px;
+	height:210px;
+	background: url(../../contents/images/character/char_activity_1.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_2 {
+	width: 137px;
+	height: 190px;
+	background: url(../../contents/images/character/char_activity_2.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_3 {
+	width: 285px;
+	height: 255px;
+	background: url(../../contents/images/character/char_activity_3.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_4 {
+	width: 200px;
+	height: 207px;
+	background: url(../../contents/images/character/char_activity_4.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_5 {
+	width: 240px;
+	height: 267px;
+	background: url(../../contents/images/character/char_activity_5.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_6 {
+	width: 320px;
+	height: 173px;
+	background: url(../../contents/images/character/char_activity_6.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_7 {
+	width: 287px;
+	height: 227px;
+	background: url(../../contents/images/character/char_activity_7.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_8 {
+	width: 132px;
+	height: 195px;
+	background: url(../../contents/images/character/char_activity_8.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_9 {
+	width: 132px;
+	height: 195px;
+	background: url(../../contents/images/character/char_activity_9.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_10 {
+	width: 157px;
+	height: 219px;
+	background: url(../../contents/images/character/char_activity_10.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_11 {
+	width: 270px;
+	height: 244px;
+	background: url(../../contents/images/character/char_activity_11.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_12 {
+	width: 182px;
+	height: 249px;
+	background: url(../../contents/images/character/char_activity_12.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_13 {
+	width: 154px;
+	height: 240px;
+	background: url(../../contents/images/character/char_activity_13.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_14 {
+	width: 220px;
+	height: 183px;
+	background: url(../../contents/images/character/char_activity_14.svg) 0 0/100% auto no-repeat;
+}
+.char_activity_15 {
+	width: 173px;
+	height: 228px;
+	background: url(../../contents/images/character/char_activity_15.svg) 0 0/100% auto no-repeat;
+}

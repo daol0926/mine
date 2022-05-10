@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1600 900" style="enable-background:new 0 0 1600 900;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCEEFF;}
+	.st1{fill:#49AAF1;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#49AAF1;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<g id="레이어_2_1_">
+	<g id="bg">
+		<rect y="0" class="st0" width="1600" height="900"/>
+	</g>
+	<g id="Layer_1">
+		<path class="st1" d="M74.5,147.2h1450c30.4,0,55,24.6,55,55v695.5l0,0H19.5l0,0V202.2C19.5,171.8,44.1,147.2,74.5,147.2z"/>
+		<path class="st2" d="M1569.5,904.6H29.5V207.6c0-27.6,22.4-50,50-50c0,0,0,0,0,0h1440c27.6,0,50,22.4,50,50V904.6z"/>
+		<path class="st3" d="M361.8,147.6L386,40.1c4.1-18.4,20.2-31.2,42.2-31.2h749c15.7,0,31.7,12.8,35.8,31.2l24.2,107.5L361.8,147.6z
+			"/>
+		<path class="st4" d="M1174,18.9H425c-14,0-26.2,9.7-29.3,23.4l-26,115.3l0.7,34.9l860.8-4.7l-2-30.2l-26-115.3
+			C1200.1,28.7,1188,19,1174,18.9z"/>
+	</g>
+</g>
+</svg>

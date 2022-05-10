@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import url(intro.css);
+@import url(goal.css);
+@import url(thinkOpoen.css);
+@import url(thisLesson.css);
+@import url(act.css);
+
+
+/* 활동 플러스 버튼 */
+.activePlusBtn {
+  padding-left: 60px;
+  background-color: #6288d9;
+  background-image: url(../images/icon/icon_activePlus.svg);
+  background-size: auto 30px;
+  background-position: 13px center;
+}
+.activeBtn {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: url(../images/button/btn_active.png) 0 0/auto 100% no-repeat;
+  cursor: pointer;
+}
+
+/* 스마트 학습관 버튼 */
+.smartSocBtn {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  background: url(../images/button/btn_smartSoc.png) 0 0/auto 100% no-repeat;
+  cursor: pointer;
+}
+
+/*  쏙쏙 도움말 버튼 */
+.catchyHelpBtn {
+  padding-left: 60px;
+  background-color: #f4a347;
+  background-image: url(../images/icon/icon_sprout.svg);
+  background-size: auto 32px;
+  background-position: 13px center;
+}
+
+/*  360도 영상 버튼 */
+.video_360_btn {
+  position: absolute;
+  width: 88px;
+  height: 64px;
+  background: url(../images/button/btn_360_video.svg) 0 center/100% auto no-repeat;
+  cursor: pointer;
+}
+
+
+/* 아이콘 */
+/*  어떻게 할까요 */
+.icon_how {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 108px;
+  background: url(../images/icon/icon_how.svg) 0 center/100% auto no-repeat;
+}
+/*  어떻게 할까요 */
+.icon_shallThink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 108px;
+  background: url(../images/icon/icon_shallThink.svg) 0 center/100% auto no-repeat;
+}
+/*  스스로시작하기 */
+.icon_selfStart {
+  position: relative;
+  /* top: 0;
+  left: 0; */
+  width: 117px;
+  height: 110px;
+  background: url(../images/icon/icon_selfStart.svg) 0 center/100% auto no-repeat;
+}
+.icon_active {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 117px;
+  height: 110px;
+  background: url(../images/icon/icon_active.svg) 0 center/100% auto no-repeat;
+}
+.icon_arrow_one {
+  background: url(../images/icon/icon_arro_one.svg) 0 0 /100% auto no-repeat;
+}
+.icon_arrow_both {
+  background: url(../images/icon/icon_arro_both.svg) 0 0 /100% auto no-repeat;
+}
+
+
+/* 타이틀 디자인 */
+/* 박스 디자인 */
+.imgBox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 30px;
+  border: 10px solid #ede8da;
+  box-sizing: border-box;
+}
+.imgBox .imgTitle {
+  padding: 4px 20px;
+  background-color: #ede8da;
+  border-radius: 20px 20px 0 0;
+}
+
+/* 중복 페이지 디자인 */
+/* QandA */
+.QandA {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.QandA .QandA_Q {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+  padding: 15px 70px 85px 230px;
+  background: url(../images/background/bg_Q.svg) 0 0 / 100% auto no-repeat;
+  box-sizing: border-box;margin-bottom: 30px;
+}
+.QandA .QandA_Q > span {
+  font-family: SCDreamB;
+  font-size: 65px;
+  color: #fa7d92;
+  margin-right: 17px;
+}
+.QandA .QandA_A {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+  padding: 15px 70px 85px 230px;
+  background: url(../images/background/bg_A.svg) 0 0 / 100% auto no-repeat;
+  box-sizing: border-box;margin-bottom: 30px;
+}
+.QandA .QandA_A > span {
+  font-family: SCDreamB;
+  font-size: 65px;
+  color: #7c7056;
+  margin-right: 17px;
+}
+.QandA .QandA_A .toggle {
+  width: 100%;
+}
+.QandA .QandA_A .toggle:after {
+  left: 45%
+}
+
+
+/* 팝업페이지 디자인 */
+/* 활동 플러스 */
+.popup_pages > li.whole.poup_activePlus {
+  padding: 210px 70px 30px;
+  background: #fff url(../images/background/bg_popup_activePlus.svg) center 0/ contain no-repeat;
+}
+.popup_pages > li.whole.poup_activePlus h2 + section {
+  padding: 0 60px;
+}
+/* 쏙쏙 도움말 */
+.popup_pages > li.popup_catchyHelp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  width: 1300px;
+  height: 600px;
+  padding: 30px 50px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+.popup_pages > li.popup_catchyHelp.sizeL {
+  height: 760px;
+}
+.popup_pages > li.popup_catchyHelp.sizeL {
+  height: 760px;
+}
+.popup_pages > li.popup_catchyHelp.on {
+  display: flex !important;
+  flex-direction: column;
+}
+.popup_pages > li.popup_catchyHelp h2.box {
+  margin-left: 5px;
+}
+.popup_pages > li.popup_catchyHelp h3.title {
+  justify-content: center;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+.popup_pages > li.popup_catchyHelp .catchy_text {
+  line-height: 1.4em;
+}

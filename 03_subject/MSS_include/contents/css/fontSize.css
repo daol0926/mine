@@ -1,0 +1,148 @@
+
+/* pageManager2.css */
+#wrap.math.lesson_5 main,
+#wrap.math.lesson_6 main,
+#wrap.soc main,
+#wrap.sci main {
+	font-size: 47px;
+}
+h2{
+	font-size: 50px;
+}
+h3 {
+	font-size: 47px;
+}
+
+h2 > .bullet.number {
+  width: 54px;
+  height: 54px;
+  line-height: 48px;
+  font-size: 38px;
+}
+.contentsBox h2.numBulletTitle+section {
+  padding: 0 144px 0 160px;
+}
+h2 ins.star {
+  /* margin-top: 3px; */
+}
+
+/* math2.css */
+h2 .blankBox.title {
+  width: 54px;
+  height: 54px;
+}
+
+/* sci2.css */
+.sci .bullet.active + span {
+  font-size: 47px;
+}
+
+/* sci_popup2.css */
+.sci .popup_pages>li.square .main {
+  font-size: 47px;
+}
+
+
+/* quiz2.css */
+.math.lesson_5 .toggle,
+.math.lesson_6 .toggle,
+.soc .toggle,
+.sci .toggle {
+  font-size: 47px;
+}
+
+
+/* popup2.css */
+.math.lesson_5 .popup_container,
+.math.lesson_6 .popup_container,
+.soc .popup_container,
+.sci .popup_container {
+  font-size: 47px;
+}
+.math.lesson_5 .popup_container > li,
+.math.lesson_6 .popup_container > li,
+.soc .popup_pages > li,
+.sci .popup_pages > li {
+  font-size: 47px;
+}
+
+
+.soc .popup_pages > li.selfCheck h2,
+.sci .popup_pages > li.selfCheck h2 {
+  font-size: 43px;
+}
+
+/* box */
+.soc .balloon,
+.sci .balloon {
+  font-size: 43px;
+}
+.soc .balloon .toggle,
+.sci .balloon .toggle {
+  font-size: 43px;
+}
+
+/* table2.css */
+.math.lesson_5 .tableContainer,
+.math.lesson_6 .tableContainer,
+.soc .tableContainer,
+.sci .tableContainer {
+  font-size: 47px;
+}
+
+
+/* scale */
+.scale_box {
+  transform: scale(1.3);
+  transform-origin: top;
+}
+.scale_box.bottom {
+  transform-origin: bottom;
+}
+.scale_box.left {
+  transform-origin: left;
+}
+.scale_box.right {
+  transform-origin: right;
+}
+
+/* mathSynbols2.css */
+h2 symbol, h2 ins.mathSymbols {
+  width: 34px;
+  height: 34px;
+  background-size: auto 34px;
+}
+
+h2 symbol.plus,
+h2 ins.mathSymbols.plus {
+  background-position-x: calc(-34px * 0);
+}
+h2 symbol.minus,
+h2 ins.mathSymbols.minus {
+  background-position-x: calc(-34px * 1);
+}
+h2 symbol.multiply,
+h2 ins.mathSymbols.multiply {
+  background-position-x: calc(-34px * 2);
+}
+h2 symbol.division,
+h2 ins.mathSymbols.division {
+  background-position-x: calc(-34px * 3);
+}
+h2 symbol.equal,
+h2 ins.mathSymbols.equal {
+  background-position-x: calc(-34px * 4);
+}
+h2 symbol.inequal_left,
+h2 ins.mathSymbols.inequal_left {
+  background-position-x: calc(-34px * 5);
+}
+h2 symbol.inequal_right,
+h2 ins.mathSymbols.inequal_right {
+  background-position-x: calc(-34px * 6);
+}
+
+.wordBtn:after {
+  top: -18px;
+  right: -16px;
+}

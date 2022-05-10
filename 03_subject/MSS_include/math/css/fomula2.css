@@ -1,0 +1,838 @@
+
+@charset "utf-8";
+
+/***********************
+* 초등 전자저작물 *
+* 수학 3-4학년 *
+* fomula.css *
+***********************/
+
+
+/* 가로식 */
+fomula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+fomula.inline {
+  display: inline;
+}
+fomula > input {
+  width: 150px;
+  text-align: center;
+}
+fomula.vertical answer,
+fomula > answer,
+fomula.vertical.answerBlue answer,
+fomula.answerBlue > answer,
+fomula.answerBlue > .answerMod {
+  color: #0080FF;
+}
+
+
+/* 세로식 */
+fomula.vertical {
+  flex-direction: column;
+  position: relative;
+  /* outline: 1px solid tomato; */
+}
+fomula.vertical > ul {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 60px;
+  /* outline: 1px solid olivedrab; */
+}
+
+fomula.vertical > ul > li {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  /* outline: 1px solid darkcyan; */
+}
+fomula.vertical.half > ul > li {
+  width: 50px;
+}
+fomula.vertical.time > ul > li:not(:first-child) {
+  justify-content: flex-end;
+  width: 130px;
+}
+
+fomula.vertical input {
+  width: calc(100% - 10px);
+  text-align: center;
+}
+
+fomula.vertical .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 2px;
+  box-sizing: border-box;
+}
+
+fomula.vertical .line.solidLine {
+  width: calc(100%);
+  height: calc(62px * 2);
+  border-width: 3px;
+  border-color: #111;
+  border-bottom-style: solid;
+  pointer-events: none;
+}
+fomula.vertical.sLineBlue .line.solidLine {
+  border-color: #0080FF;;
+}
+fomula.vertical .line.dashedLine {
+  height: 100%;
+  margin-left: -2px;
+  border-color: #333;
+  border-right-style: dashed;
+}
+fomula.vertical .line.dottedLine {
+  height: 100%;
+  margin-left: -2px;
+  border-right-style: dotted;
+}
+fomula.vertical .line.dottedLine:nth-of-type(2),
+fomula.vertical .line.dashedLine:nth-of-type(2) {
+  left: calc(60px * (2 - 1));
+}
+fomula.vertical .line.dottedLine:nth-of-type(3),
+fomula.vertical .line.dashedLine:nth-of-type(3) {
+  left: calc(60px * (3 - 1));
+}
+fomula.vertical .line.dottedLine:nth-of-type(4),
+fomula.vertical .line.dashedLine:nth-of-type(4) {
+  left: calc(60px * (4 - 1));
+}
+fomula.vertical .line.dottedLine:nth-of-type(5),
+fomula.vertical .line.dashedLine:nth-of-type(5) {
+  left: calc(60px * (5 - 1));
+  border-color: #eb048e;
+}
+fomula.vertical .line.dottedLine:nth-of-type(6),
+fomula.vertical .line.dashedLine:nth-of-type(6) {
+  left: calc(60px * (6 - 1));
+}
+
+/* 왼쪽 두줄 세로선 */
+fomula.vertical.leftPink .line.dottedLine:nth-of-type(2),
+fomula.vertical.leftPink .line.dashedLine:nth-of-type(2) {
+  left: calc(60px * (2 - 1));
+  border-color: #eb048e;
+}
+fomula.vertical.leftPink .line.dottedLine:nth-of-type(3),
+fomula.vertical.leftPink .line.dashedLine:nth-of-type(3) {
+  left: calc(60px * (3 - 1));
+  border-color: #eb048e;
+}
+fomula.vertical.leftPink .line.dottedLine:nth-of-type(5),
+fomula.vertical.leftPink .line.dashedLine:nth-of-type(5) {
+  left: calc(60px * (5 - 1));
+  border-color: #333;
+}
+
+/* 중앙 두줄 세로선 */
+fomula.vertical.centerPink .line.dottedLine:nth-of-type(3),
+fomula.vertical.centerPink .line.dashedLine:nth-of-type(3) {
+  left: calc(60px * (3 - 1));
+  border-color: #eb048e;
+}
+fomula.vertical.centerPink .line.dottedLine:nth-of-type(4),
+fomula.vertical.centerPink .line.dashedLine:nth-of-type(4) {
+  left: calc(60px * (4 - 1));
+  border-color: #eb048e;
+}
+fomula.vertical.centerPink .line.dottedLine:nth-of-type(5),
+fomula.vertical.centerPink .line.dashedLine:nth-of-type(5) {
+  left: calc(60px * (5 - 1));
+  border-color: #333;
+}
+
+/* 오른쪽 세로선 */
+fomula.vertical.rightPink .line.dottedLine:nth-of-type(5),
+fomula.vertical.rightPink .line.dashedLine:nth-of-type(5) {
+  left: calc(60px * (5 - 1));
+  border-color: #eb048e;
+}
+
+/* 오른쪽 세로선 검정 */
+fomula.vertical.rightBlack .line.dottedLine:nth-of-type(5),
+fomula.vertical.rightBlack .line.dashedLine:nth-of-type(5) {
+  left: calc(60px * (5 - 1));
+  border-color: #333;
+}
+
+/* 나눗셈 세로식 */
+.divisionBox .division, .divisionBox .equal {
+  display: none;
+}
+fomula.divisionBox {
+  position: relative;
+  align-items: flex-start;
+}
+fomula.divisionBox .division_left {
+  position: relative;
+  top: 60px;
+}
+fomula.divisionBox .division_left .divisior .toggleText {
+  /* padding: 0 12px; */
+  padding: 0 11px;
+}
+fomula.divisionBox .division_right {
+  text-align: right;
+}
+/* fomula.divisionBox .division_right > li > span {
+  padding: 0 12px;
+} */
+fomula.divisionBox .division_right > li > span {
+  /* width: 42px;
+  height: 55px; */
+  width: 36px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.divisionContainer.wide fomula.divisionBox .division_right > li > span {
+  width: 42px;
+}
+fomula.divisionBox .division_right .toggle.blue, 
+fomula.divisionBox .division_right .toggle .blue,
+fomula.divisionBox .division_right .toggleText.blue span,
+fomula.divisionBox .division_right .toggleText span.blue,
+fomula.divisionBox .division_right .blue span,
+fomula.divisionBox .division_right .quotient.blue,
+fomula.divisionBox .division_right > li.blue > span.blue,
+fomula.divisionBox .division_right > li > span.blue,
+fomula.divisionBox .division_right.blue *:not(.dividend > span),
+fomula.divisionBox .toggle .answer,
+fomula.divisionBox [data-toggle-target] {
+  color: #0080FF;
+}
+fomula.divisionBox .division_right.blue .dividend > span {
+  color: #333333;
+}
+fomula.divisionBox .division_right > li:nth-child(2n+1):not(:first-child) {
+  border-bottom: 3px solid black;
+  margin-left: 10px;
+  padding: 2px 0;
+}
+fomula.divisionBox .division_right > li.blueLine:nth-child(2n+1):not(:first-child),
+fomula.divisionBox .division_right.blue > li:nth-child(2n+1):not(:first-child) {
+  border-bottom: 3px solid #0080FF;
+}
+fomula.divisionBox .division_right > li[class *= "toggleMore"]:nth-child(2n+1):not(:first-child) {
+  margin-left: 10px;
+  border-radius: 0px;
+  padding-left: 10px;
+}
+fomula.divisionBox input {
+  position: absolute;
+  padding-right: 2px;
+  text-align: right;
+  letter-spacing: 26px;
+}
+fomula.divisionBox .dividend::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/divisionLine.svg) 0 0 /auto 100% no-repeat;
+}
+fomula.divisionBox .dividend.blue::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/divisionLine_blue.svg) 0 0 /auto 43px no-repeat;
+}
+
+fomula.divisionBox ul > li {
+  height: 54px;
+  line-height: 54px;
+}
+fomula.divisionBox .quotient {
+  padding-bottom: 5px;
+}
+fomula.divisionBox .quotient.answerMod::before {
+  content: '…';
+  position: absolute;
+  right: -32px;
+  top: 0px;
+}
+.wide fomula.divisionBox .quotient.answerMod::before {
+  right: -32px;
+}
+fomula.divisionBox .quotient.answerMod::after {
+  /* content: '44'; */
+  position: absolute;
+  right: -87px;
+  top: 0;
+  width: 50px;
+  text-align: left;
+}
+.wide fomula.divisionBox .quotient.answerMod::after {
+  right: -88px;
+}
+fomula.divisionBox .dividend {
+  position: relative;
+  padding-left: 10px;
+  border-top: 3px solid black;
+  margin-left: 10px;
+}
+.divisionBox .toggleText .toggle.text {
+  min-width: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+.divisionBox .toggleText[class *= "toggleMore"] {
+  display: block;
+  right: 0;
+  min-width: auto;
+  width: auto;
+  height: auto;
+  margin: 0 0 0 20px;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+.divisionBox .toggle.text:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -13px;
+  width: 48px;
+  height: 48px;
+  margin: 0px 0 0 0;
+  border-radius: 8px;
+}
+.divisionBox .toggle.text[class *= "toggleMore"]:before {
+  right: -1px;
+  /* top: -20px; */
+}
+.divisionBox .toggle.text.toggleMore:before {width: 92px;}
+.divisionBox .toggle.beigeBg.toggleMore_3:before {width: 139px;}
+.divisionBox .toggle.grayLine.toggleMore_3:before {width: 139px;}
+.divisionBox .toggle.text.toggleMore_4:before { width: 187px; }
+.divisionBox .toggle.grayLine:before {
+  background: #fff;
+  border: 2px solid #cccccc;
+}
+.divisionContainer .toggle.beigeBg:before {
+  background: #EDE8DA;
+  border: 2px solid #EDE8DA;
+}
+.divisionContainer .toggle.beigeBg.after_noBg.complete:before {
+  background: transparent;
+  border: 2px solid transparent;
+}
+fomula.divisionBox .division_right > li[class *= "toggleMore"]:nth-child(2n+1):before {
+  top: 3px;
+}
+fomula.divisionBox .division_right > li[class *= "toggleMore"]:nth-child(2n+1):after {
+  left: calc(50% - -5px);
+}
+fomula.divisionBox .division_right > li.bigBox:after {
+  left: 50% !important;
+}
+fomula.divisionBox .division_right > li.bigBox.complete:before {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.quoitent_mod {
+  position: absolute;
+  /* height: 42px;
+  top: 13px; */
+  height: 52px;
+  top: 8px;
+}
+.quoitent_mod.complete {
+  background-color: transparent;
+}
+
+.hiddenText {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* 세로식 (나눗셈) 테이블 */
+.divisionBox_table td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #BBBDC0;
+  text-align: center;
+} 
+.divisionBox_table td.bottomLine {
+  border-bottom: 1px solid #000;
+}
+.divisionBox_table td.bgSky {
+  background-color: #DFF2F4;
+}
+.divisionBox_table td.bgPink {
+  background-color: #FEE8DE;
+}
+.divisionBox_table td.bgGreen {
+  background-color: #E0F1E6;
+}
+.divisionBox_table .dividend {
+  position: relative;
+}
+.divisionBox_table .dividend::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: url(../images/divisionLine_table.svg) 0 0 /auto 60px no-repeat;
+}
+
+
+/* 세로식 (곱셈) */
+fomula.multiplyBox,
+fomula.plusBox {
+  display: block;
+}
+fomula.multiplyBox > div > span,
+fomula.plusBox > div > span {
+  display: inline-block;
+  position: relative;
+  /* width: 42px;
+  height: 55px; */
+  width: 34px;
+  height: 48px;
+  text-align: center;
+  vertical-align: text-top;
+}
+.multiplyContainer.wide fomula.multiplyBox > div {
+  padding-left: 5px !important;
+}
+.multiplyContainer.wide fomula.multiplyBox > div > span {
+  /* width: 50px; */
+  width: 45px;
+  height: 55px;
+}
+fomula.multiplyBox > div > span > ins.carry {
+  position: absolute;
+  top: -36px;
+  left: 0;
+  font-size: 32px;
+  width: 34px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  display: inline-block;
+}
+fomula.multiplyBox > div > span > ins.carry[data-toggle-target] {
+  color: #0080FF;
+}
+
+fomula.multiplyBox > div:nth-child(2n),
+fomula.plusBox > div:nth-child(2n) {
+  padding: 0 0 5px 0 !important;
+  border-bottom: 3px solid black;
+  border-radius: 0;
+}
+fomula.multiplyBox > div:nth-child(2n).blueLine,
+fomula.plusBox > div:nth-child(2n).blueLine {
+  border-bottom: 3px solid #0080FF;
+}
+
+fomula.multiplyBox > div:nth-child(2n),
+fomula.plusBox > div:nth-child(2n) {
+  padding-bottom: 4px;
+}
+fomula.multiplyBox > div:nth-child(2n+1) {
+  margin-top: 3px;
+}
+
+
+.multiplyContainer .toggleText .toggle.text,
+.plusContainer .toggleText .toggle.text {
+  min-width: auto;
+  width: auto;
+  height: auto;
+  /* margin: 0; */
+  margin: -2px 0 0 0;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+.multiplyContainer .toggleText[class *= "toggleMore"],
+.plusContainer .toggleText[class *= "toggleMore"] {
+  display: block;
+  right: 0;
+  min-width: auto;
+  width: auto;
+  height: auto;
+  margin: 2px 0 0 0px;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+}
+.multiplyContainer .toggle.text:before,
+.plusContainer .toggle.text:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: -13px;
+  width: 42px;
+  height: 42px;
+  margin: 0px 0 0 0;
+  border-radius: 8px;
+
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -13px;
+  width: 48px;
+  height: 48px;
+  margin: 0px 0 0 0;
+  border-radius: 8px;
+}
+.multiplyContainer .toggle.text[class *= "toggleMore"]:before,
+.plusContainer .toggle.text[class *= "toggleMore"]:before {
+  right: 0px;
+  top: 3px;
+}
+.multiplyContainer .toggle.text[class *= "toggleMore"]:after {
+  /* top: calc(50% + 3px); */
+}
+.multiplyContainer .toggle.text.toggleMore_1:before,
+.multiplyContainer .toggle.box.toggleMore_1:before { width: 41px; }
+.multiplyContainer .toggle.text.toggleMore:before,
+.multiplyContainer .toggle.text.toggleMore_2:before,
+.multiplyContainer .toggle.box.toggleMore_2:before { width: 78px; }
+.multiplyContainer .toggle.text.toggleMore_3:before,
+.multiplyContainer .toggle.box.toggleMore_3:before { width: 123px; }
+.multiplyContainer .toggle.text.toggleMore_4:before,
+.multiplyContainer .toggle.box.toggleMore_4:before { width: 168px; }
+.multiplyContainer .toggle.text.toggleMore_5:before,
+.multiplyContainer .toggle.box.toggleMore_5:before { width: 212px; }
+
+.multiplyContainer.wide .toggle.text.toggleMore:before { width: 41px; }
+.multiplyContainer.wide .toggle.text.toggleMore:before,
+.multiplyContainer.wide .toggle.text.toggleMore_2:before { width: 98px; }
+.multiplyContainer.wide .toggle.text.toggleMore_3:before { width: 154px; }
+.multiplyContainer.wide .toggle.text.toggleMore_4:before { width: 210px; }
+
+.multiplyContainer .toggle.grayLine:before {
+  background: #fff;
+  border: 2px solid #cccccc;
+}
+.multiplyContainer .toggle.beigeBg:before,
+.plusContainer .toggle.beigeBg:before {
+  background: #EDE8DA;
+  border: 2px solid #EDE8DA;
+}
+.multiplyContainer .toggle.beigeBg.after_noBg.complete:before {
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+
+.multiplyContainer .toggleText.toggle.box:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  border-radius: 10px;
+}
+.multiplyContainer .toggleText.bigBox.toggle.complete.beigeBg:before,
+.plusContainer .toggleText.bigBox.toggle.complete.beigeBg:before {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+.multiplyContainer fomula.multiplyBox .toggle.blue, 
+.multiplyContainer fomula.multiplyBox .toggle .blue,
+.multiplyContainer fomula.multiplyBox .toggleText.blue span,
+.multiplyContainer fomula.multiplyBox .toggleText span.blue,
+.multiplyContainer fomula.multiplyBox .blue span,
+.multiplyContainer fomula.multiplyBox.blue *,
+.multiplyContainer fomula.multiplyBox .toggle .answer,
+.multiplyContainer fomula.multiplyBox [data-toggle-target] {
+  color: #0080FF;
+}
+
+/* 세로식(단위 덧셈) */
+fomula.plusBox > div > span.width_auto { width: auto;}
+
+.plusContainer fomula.plusBox .toggle.blue, 
+.plusContainer fomula.plusBox .toggle .blue,
+.plusContainer fomula.plusBox .toggleText.blue span,
+.plusContainer fomula.plusBox .toggleText span.blue,
+.plusContainer fomula.plusBox .blue span,
+.plusContainer fomula.plusBox.blue *,
+.plusContainer fomula.plusBox .toggle .answer,
+.plusContainer fomula.plusBox [data-toggle-target] {
+  color: #0080FF;
+}
+.plusContainer .toggle.text.toggleMore_4:before,
+.plusContainer .toggle.box.toggleMore_4:before { width: 298px; }
+
+.plusContainer.wide fomula.plusBox > div > span:nth-child(2) {width: 50px;}
+
+.plusContainer.wide fomula.plusBox > div > span:nth-child(4) {width: 100px;}
+.plusContainer.wide fomula.plusBox > div > span.toggle:nth-child(4) {margin: 0;}
+
+fomula.plusBox > div:nth-child(3) {margin-top: 5px;}
+
+fomula.plusBox > div .toggle.minSize {
+  justify-content: center;
+  min-width: 50px;
+  height: 50px;
+  padding: 0px 10px;
+  margin: 0 0 0 5px;
+  line-height: 51px;
+}
+fomula.plusBox > div:nth-child(2n) {
+  position: relative;
+  padding: 0 1px 5px 0 !important;
+}
+
+.plusContainer2.wide,
+.plusContainer3.wide {position: relative; border: 2px solid #ccc;}
+
+.plusContainer2 fomula.plusBox > div:nth-child(1),
+.plusContainer3 fomula.plusBox > div:nth-child(1) {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+}
+.plusContainer2 .backColorLeft,
+.plusContainer3 .backColorLeft,
+.plusContainer2 .backColorRight,
+.plusContainer3 .backColorRight {
+  position: absolute;
+  top: -1px;
+  height: 185px;
+  border-left: 2px solid #ccc;
+}
+
+.plusContainer2 .backColorLeft {
+  left: 40px;
+  width: 110px;
+  background-color: #DCEFE1;
+}
+.plusContainer2 .backColorRight {
+  left: 148px;
+  width: 202px;
+  background-color: #F2D7D5;
+}
+
+.plusContainer3 .backColorLeft {
+  top: 0;
+  left: 38px;
+  width: 129px;
+  height: 184px;
+  background-color: #DCEFE1;
+}
+.plusContainer3 .backColorRight {
+  top: 0;
+  left: 169px;
+  width: 163px;
+  height: 184px;
+  background-color: #F2D7D5;
+}
+
+/* 세로식(기호) */
+fomula.vertical.weight input {
+  text-align: right;
+}
+fomula.vertical.weight > ul > li {
+  position: relative;
+}
+
+fomula.vertical.weight > ul > li:nth-child(2) {
+  justify-content: flex-end;
+  width: 110px;
+  padding-right: 10px;
+}
+fomula.vertical.weight > ul > li:nth-child(3) {
+  width: 50px;
+}
+fomula.vertical.weight.kg > ul > li:nth-child(3) {
+  width: 90px;
+}
+fomula.vertical.weight > ul > li:nth-child(4) {
+  justify-content: flex-end;
+  width: 140px;
+  padding-right: 10px;
+}
+
+main fomula.vertical.weight > ul:not(:nth-child(3)) > li:nth-child(2),
+main fomula.vertical.weight > ul:not(:nth-child(3)) > li:nth-child(4) {
+  padding-right: 24px;
+}
+
+.solve fomula.vertical.weight > ul > li:nth-child(1){
+  width: 50px;
+}
+.solve fomula.vertical.weight > ul > li:nth-child(2){
+  width: 70px;
+}
+.solve fomula.vertical.weight > ul > li:nth-child(4),
+.solve fomula.vertical.weight > ul > li:nth-child(6){
+  width: 110px;
+}
+
+
+fomula.vertical.weight > ul > li:nth-child(5),
+fomula.vertical.weight > ul > li:nth-child(7) {
+  width: 50px;
+}
+
+
+/* small */
+fomula.vertical.small > ul {
+  height: 50px;
+}
+fomula.vertical.small > ul > li {
+  width: 50px;
+}
+fomula.vertical.small .line.solidLine {
+  height: calc(51px * 2);
+}
+
+/* horizon add */
+fomula.horizon.equalBlue symbol.equal {
+  background-image: url(../../math/images/math/mathSymbols_blue.svg);
+}
+
+fomula toggle {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background: #fff;
+  border: 2px solid #cccccc;
+
+  min-width: 46px;
+  margin: 0px 0 0 0;
+  padding: 4px 12px 4px;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+fomula toggle:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  background: url(../../contents/images/quiz/icon_toggle.svg) center/contain no-repeat;
+  /* background: url(../images/quiz/icon_toggle.svg) center/contain no-repeat; */
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+.divisionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.divisionContainer fomula.vertical > ul > li {
+  letter-spacing: 28px;
+}
+.divisionContainer fomula.vertical.small > ul > li {
+  width: auto;
+}
+.divisionContainer fomula.vertical.small > ul > li span {
+  text-align: center;
+}
+.divisionContainer fomula[data-solid-line] {
+  padding-left: 34px;
+}
+.divisionContainer fomula.vertical.part_1 .line.solidLine {
+  height: calc(51px * 1);
+}
+
+
+/* .divisionContainer .toggleText .toggle.text {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin: 0px 0 0 0;
+  background: #fff;
+  border: 2px solid #cccccc;
+} */
+
+
+/* 기존 fomula 파란색상 추가 */
+fomula.vertical.blue * {
+  color: #0080FF;
+  border-color: #0080FF !important;
+}
+
+
+/* 2학기 추가 */
+fomula.divisionBox .toggle.text.grayLine::after,
+fomula.plusBox .toggle.text.grayLine::after {
+  top: 47%;
+  left: 45%;
+}
+fomula.multiplyBox .toggle.text.grayLine::after {
+  top: 47%;
+}
+/* fomula.multiplyBox > div:nth-child(2n+1).toggle.text.grayLine::after {
+  top: calc(47% + 2px);
+} */
+fomula.multiplyBox [class *= "toggleMore"].toggle.text.grayLine::after {
+  top: 5px !important;
+  transform: translate(0%, 0%) !important;
+  left: auto !important;
+}
+fomula.multiplyBox .toggle.text.toggleMore_2.grayLine::after { right: 17px; }
+fomula.multiplyBox .toggle.text.toggleMore_3.grayLine::after { right: 37px; }
+fomula.multiplyBox .toggle.text.toggleMore_4.grayLine::after { right: 60px; }
+fomula.multiplyBox .toggle.text.toggleMore_5.grayLine::after { right: 84px; }
+
+
+/* verSize */
+/* PAR_32_01_0009_B_02.html 참고 해주세요. */
+.toggle.minSize.verSize {
+  justify-content: center;
+  width: auto;
+  min-width: 60px;
+  height: 52px;
+  padding: 0px 10px 0px;
+  margin-top: -4px;
+  line-height: 51px;
+  left: 0;
+  background-color: transparent;
+}
+.toggle.minSize.verSize:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -13px;
+  width: 48px;
+  height: 48px;
+  margin: 0px 0 0 0;
+  border-radius: 8px;
+}

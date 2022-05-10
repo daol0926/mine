@@ -1,0 +1,175 @@
+
+@charset "utf-8";
+
+/***********************
+* ìˆ˜í•™ 3-4í•™ë…„ *
+* mathSymbols.css *
+***********************/
+
+/* ìˆ˜í•™ ê¸°í˜¸ */
+symbol, ins.mathSymbols {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin: -2px 4px 2px;
+  background-position: 0 0;
+  background-size: auto 26px;
+  background-image: url(../images/math/mathSymbols.svg);
+}
+#wrap header h1 symbol,
+#wrap header h1 ins.mathSymbols {
+  width: 34px;
+  height: 34px;
+  background-size: auto 34px;
+}
+#wrap header h1.darkBlue symbol,
+#wrap header h1.darkBlue ins.mathSymbols {
+  background-image: url(../images/math/mathSymbols_navy.svg);
+}
+#wrap header h1 symbol.plus,
+#wrap header h1 ins.mathSymbols.plus {
+  background-position-x: calc(-34px * 0);
+}
+#wrap header h1 symbol.minus,
+#wrap header h1 ins.mathSymbols.minus {
+  background-position-x: calc(-34px * 1);
+}
+#wrap header h1 symbol.multiply,
+#wrap header h1 ins.mathSymbols.multiply {
+  background-position-x: calc(-34px * 2);
+}
+#wrap header h1 symbol.division,
+#wrap header h1 ins.mathSymbols.division {
+  background-position-x: calc(-34px * 3);
+}
+#wrap header h1 symbol.equal,
+#wrap header h1 ins.mathSymbols.equal {
+  background-position-x: calc(-34px * 4);
+}
+#wrap header h1 symbol.inequal_left,
+#wrap header h1 ins.mathSymbols.inequal_left {
+  background-position-x: calc(-34px * 5);
+}
+#wrap header h1 symbol.inequal_right,
+#wrap header h1 ins.mathSymbols.inequal_right {
+  background-position-x: calc(-34px * 6);
+}
+h2 symbol, h2 ins.mathSymbols {
+  margin: -6px 4px 0 4px;
+}
+
+h2 symbol.inequal_left,
+h2 symbol.inequal_right,
+h2 ins.mathSymbols.inequal_left,
+h2 ins.mathSymbols.inequal_right {
+  transform: scale(1.4);
+}
+h2 .font_equal {
+  font-size: 52px;
+  line-height: 1em;
+}
+
+symbol.white,
+ins.mathSymbols.white {
+  background-image: url(../images/math/mathSymbols_white.svg);
+}
+symbol.blue,
+ins.mathSymbols.blue {
+  background-image: url(../images/math/mathSymbols_blue.svg);
+}
+symbol.red,
+ins.mathSymbols.red {
+  background-image: url(../images/math/mathSymbols_red.svg);
+}
+symbol.orange,
+ins.mathSymbols.orange {
+  background-image: url(../images/math/mathSymbols_orange.svg);
+  background-size: auto 26px;
+  background-position-x: calc(-27px * 2) !important;
+}
+symbol.emerald,
+ins.mathSymbols.emerald {
+  background-image: url(../images/math/mathSymbols_emerald.svg);
+  background-size: auto 26px;
+  background-position-x: calc(-27px * 2) !important;
+}
+symbol.green,
+ins.mathSymbols.green {
+  background-image: url(../images/math/mathSymbols_green.svg);
+  background-size: auto 26px;
+  background-position-x: calc(-27px * 2) !important;
+}
+#wrap.act header h1 symbol,
+#wrap.act header h1 ins.mathSymbols {
+  background-image: url(../images/math/mathSymbols_header.svg);
+}
+symbol.plus,
+ins.mathSymbols.plus {
+  background-position-x: calc(-26px * 0);
+}
+symbol.minus,
+ins.mathSymbols.minus {
+  background-position-x: calc(-26px * 1);
+}
+symbol.multiply,
+ins.mathSymbols.multiply {
+  background-position-x: calc(-26px * 2);
+}
+symbol.division,
+ins.mathSymbols.division {
+  background-position-x: calc(-26px * 3);
+}
+symbol.equal,
+ins.mathSymbols.equal {
+  background-position-x: calc(-26px * 4);
+}
+symbol.inequal_left,
+ins.mathSymbols.inequal_left {
+  background-position-x: calc(-26px * 5);
+}
+symbol.inequal_right,
+ins.mathSymbols.inequal_right {
+  background-position-x: calc(-26px * 6);
+}
+symbol.answerMod, ins.mathSymbols.answerMod {
+  width: auto;
+  height: auto;
+  margin: 0 3px;
+  background: none;
+  text-align: center;
+}
+
+fomula.blue symbol.plus,
+fomula.blue ins.mathSymbols.plus {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.minus,
+fomula.blue ins.mathSymbols.minus {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.multiply,
+fomula.blue ins.mathSymbols.multiply {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.division,
+fomula.blue ins.mathSymbols.division {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.equal,
+fomula.blue ins.mathSymbols.equal {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.inequal_left,
+fomula.blue ins.mathSymbols.inequal_left {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.inequal_right,
+fomula.blue ins.mathSymbols.inequal_right {
+   background-image: url(../images/math/mathSymbols_blue.svg);
+}
+fomula.blue symbol.answerMod,
+fomula.blue ins.mathSymbols.answerMod {
+  color: #0080FF;
+}
+

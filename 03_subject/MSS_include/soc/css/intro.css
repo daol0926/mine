@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 3학년 */
+#wrap.soc.grade_3.intro.lesson_1 {
+  background: url(../images/background/grade3_lesson1.png) left bottom /auto 900px no-repeat;
+}
+#wrap.soc.grade_3.intro.lesson_2 {
+  background: ;
+}
+#wrap.soc.grade_3.intro.lesson_3 {
+  background: ;
+}
+/* 4학년 */
+#wrap.soc.grade_4.intro.lesson_1 {
+  background: url(../images/background/grade4_lesson1.png) left bottom /auto 900px no-repeat;
+}
+#wrap.soc.grade_4.intro.lesson_2 {
+  background: ;
+}
+#wrap.soc.grade_4.intro.lesson_3 {
+  background: ;
+}
+
+
+
+#wrap.soc.intro .lesson {
+  position: absolute;
+  top: 300px;
+  left: 1090px;
+}
+#wrap.soc.intro .chapter {
+  position: absolute;
+  top: 470px;
+  left: 1090px;
+}

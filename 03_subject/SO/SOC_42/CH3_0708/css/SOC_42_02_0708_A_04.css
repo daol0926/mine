@@ -1,0 +1,62 @@
+@charset "utf-8";
+.popupBtn{
+  right:0;
+  bottom: 0;
+}
+
+/* page1 */
+.innerPage_1 ul.quizList li.li_answer{
+  margin-left:0;
+}
+
+.innerPage_1 .toggle.complete + .wordBtn {
+  opacity: 1;
+}
+.innerPage_1 .wordBtn {
+  opacity: 0;
+  width: 82px;
+  height: 57px;
+  position: absolute;
+  top: 31px;
+  left: 1178px;
+}
+.innerPage_1 .balloon {
+  position: absolute;
+  top: 110px;
+  left: 798px;
+}
+.innerPage_1 .balloon.topLeft:after {
+  left: 402px;
+}
+
+.innerPage_3 .flex-box{
+  background:url(../images/SOC_42_02_0708_A_04/SOC_42_02_0708_A_04_01.png) no-repeat center/auto 590px;
+  height: 634px;
+}
+.innerPage_3 .bal_01{
+  top: 232px;
+  left: 13px;
+  width: 425px;
+}
+.innerPage_3 .bal_02{
+  top: -28px;
+  left: 524px;
+  width: 545px;
+}
+.innerPage_3 .bal_02.bottomRight::after{
+  right: 134px;
+  bottom: -25px;
+}
+.innerPage_3 .bal_03{
+  top: 172px;
+  right: 0;
+  width: 425px;
+}
+.innerPage_3 .bal_03::after{
+  left: 0;
+  right:unset;
+  bottom: -8px;
+}
+.innerPage_3 .speakerBtn{
+  left: 260px;
+position: absolute;}

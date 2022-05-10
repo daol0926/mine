@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#wrap.act header h1[data-idx] {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-image: none;
+  padding-left: 102px;
+}
+#wrap.act header h1[data-idx]:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102px;
+  height: 100%;
+  font-size: 80px;
+  text-align: center;
+
+}
+#wrap.act header h1[data-idx="1"]:after { content: "1"; }
+#wrap.act header h1[data-idx="2"]:after { content: "2"; }
+#wrap.act header h1[data-idx="3"]:after { content: "3"; }
+#wrap.act header h1[data-idx="4"]:after { content: "4"; }
+#wrap.act header h1[data-idx="5"]:after { content: "5"; }
+#wrap.act header h1[data-idx="6"]:after { content: "6"; }
+#wrap.act header h1[data-idx="7"]:after { content: "7"; }
+#wrap.act header h1[data-idx="8"]:after { content: "8"; }
+#wrap.act header h1[data-idx="9"]:after { content: "9"; }
+
+#wrap.act header h1 > ins.num {
+
+}
