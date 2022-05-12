@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.underline{
+    border-bottom:2px solid #000;
+}
+
+/* page3 */
+.page3 .flex-box{
+    align-items: center;
+}
+.page3 .img-box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 50%;
+    margin-right: 50px;
+}
+.page3 .img-box .img{
+    width: fit-content;
+    height: 400px;
+}
+.page3 .multipleChoiceList.wrap{
+    justify-content: flex-start;
+}
+.page3 .multipleChoiceList > li:not(.column) .bullet{
+    margin-top: -2px;
+}

@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+li[class*="page"] section{
+  padding:0 144px;
+}
+li[class*="page"] section .li_answer{
+  margin-left:0;
+}
+
+/* page2 */
+li.page2 section{
+  padding: 0 60px;
+}
+.page2 .img-box{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.page2 .img-box .img{
+  max-width: 100%;
+}
+.page2 .img-box .img-txt{
+  letter-spacing: -2px;
+  width: 100%;
+  justify-content: center;
+background: #ffbea8;}
+
+
+/* popup */
+.whole .pop-title,
+.whole .pop-txt{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.whole .flex-box{
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.whole .flex-box .img-box{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin: 0 auto;
+}
+.whole.pop_page_3 .flex-box .img-box{
+  width: 70%;
+}
+.whole .flex-box .img-box .img{
+  max-width: 100%;
+}
+.whole.pop_page_2 .flex-box{
+  align-items: center;
+  justify-content: space-evenly;
+}
+.whole.pop_page_2 .flex-box .img-box{
+  width: 43%;
+  /* background-color:#fbdce2; */
+}
