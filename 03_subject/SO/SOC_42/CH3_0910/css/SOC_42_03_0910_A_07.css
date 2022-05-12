@@ -1,0 +1,35 @@
+@charset "utf-8";
+.icon_active {
+  position: static;
+  display: inline-block;
+  height: 75px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+h2 span>.bullet{
+  display: inline-block;
+  margin-right: 5px !important;
+}
+
+/* page1 */
+.page1 .speakerBtn{
+  position: absolute;
+  left: 850px;
+  top: -10px;
+}
+.page1 .imgBgContainer{
+  background:url(../images/SOC_42_03_0910_A_07/SOC_42_03_0910_A_07_01.png) no-repeat center right/auto 100%;
+  height:700px;
+}
+.page1 .colorBox.lightOrange{
+  opacity: .7;
+  width: 800px;
+  height: 500px;
+}
+.page1 .box-txt{
+  position: absolute;
+  left: 161px;
+  top:50px;
+  width: 780px;
+  height: 480px;
+}
