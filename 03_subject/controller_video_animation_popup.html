@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../MSS_include/libs/css/master.css" />
+    <style>
+      .movieBtn[data-popup-btn="1"] {
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>팝업 유형 - 영상 팝업</h1>
+      </header>
+      <main>
+        <!--  h2와 section으로만 이루어진 구조는 contentsBox에 flex 클래스를 추가하여 flex column 구조가 되게끔 유지(flex 클래스로 인해 section의 h2의 길이에 따라 section의 세로 영역이 자유자재로 조절이 됨.) 슬라이드로 이뤄진 페이지는 flex 클래스 불필요 -->
+        <div class="contentsBox flex">
+          <section class="full">
+            <ul class="contentsList">
+              <li>
+                <ins class="dot orange"></ins>
+                <div>data-popup-btn, data-popup-page 값으로 팝업 오픈(한 세트) - 버튼 여러 개로 속성 값만 맞추면 한 팝업을 열 수 있음.</div>
+              </li>
+              <li>
+                <ins class="dot orange"></ins>
+                <div>팝업 페이지들은 data-popup-container에 감싸져야 함. 그 안에 실제 열리는 페이지들은 data-popup-page 속성이 있어야 함. </div>
+              </li>
+              <li>
+                <ins class="dot orange"></ins>
+                <div>전체 창 팝업은 data-popup-page 페이지에 whole 클래스 무조건 추가</div>
+              </li>
+            </ul>
+            <div class="movieBtn" data-hover="" data-popup-btn="1"></div>
+          </section>
+        </div>
+      </main>
+      <section class="popup_container" data-popup-container="">
+        <ul class="popup_pages">
+          <li class="whole pop_page_1" data-popup-page="1">
+            <h2>
+              <ins class="star"></ins>
+              <span>영상 제목</span>
+            </h2>
+            <div class="popup_contents">
+              <!-- mediaContainer video 클래스 data-media-container="video"  -->
+              <div class="mediaContainer video" data-media-container="video" data-media-full="" data-show-controls-on-fullsize="">
+                <video class="" poster="media/mp4/대단원 도입_단원열기 만화.jpg" webkit-playsinline="" playsinline="">
+                  <!--   비디오 경로 삽입   -->
+                  <source src="media/mp4/대단원 도입_단원열기 만화.mp4" type="video/mp4" />
+                  Your browser does not support the video element.
+                </video>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="loadingContainer">
+      <div class="loadingIconAnimation"></div>
+    </div>
+
+    <script type="text/javascript" src="../../../MSS_include/libs/js/ts.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/animate.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/dragdrop.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/slider.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/popup.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/scroll.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/controller.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/appear.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/contents/js/quiz/quiz.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/contents/js/pageManager.js"></script>
+
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>

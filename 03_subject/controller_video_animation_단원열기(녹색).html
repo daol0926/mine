@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../MSS_include/libs/css/master.css" />
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <!-- #wrap에  aniContainer 클래스 추가  -->
+    <div id="wrap" class="aniContainer green">
+      <!-- mediaContainer video 클래스 data-media-container="video"  -->
+      <div class="mediaContainer video" data-media-container="video" data-media-full="" data-show-controls-on-fullsize="">
+        <div class="animationTitle">
+          <!--   보드 내용에 따라 제목 삽입   -->
+          <h2>봄 날씨를 느껴 보아요</h2>
+        </div>
+        <video class="" poster="media/mp4/대단원 도입_단원열기 만화.jpg" webkit-playsinline="" playsinline="">
+          <!--   비디오 경로 삽입   -->
+          <source src="media/mp4/대단원 도입_단원열기 만화.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </div>
+    <div id="loadingContainer">
+      <div class="loadingIconAnimation"></div>
+    </div>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/ts.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/animate.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/dragdrop.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/slider.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/popup.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/scroll.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/controller.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/libs/js/appear.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/contents/js/quiz/quiz.js"></script>
+    <script type="text/javascript" src="../../../MSS_include/contents/js/pageManager.js"></script>
+
+    <script type="text/javascript">
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          // <!--   하위 콜백 필수   -->
+          window.$callBack.mediaStart = function (obj) {
+            // obj.container.classList.add("started");
+          };
+          window.$callBack.mediaEnd = function (obj) {
+            // obj.container.classList.remove('started');
+          };
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
