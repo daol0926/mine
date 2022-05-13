@@ -17,10 +17,19 @@
 .page1 .tableContainer td{
   padding:10px;
 }
+.page1 .tableContainer td{
+  position: relative;
+}
 .page1 .tableContainer tbody tr td:first-child{
   text-align: justify;
   letter-spacing: -3px;
 }
+
+.page1 .selfCheckBox{
+  position: absolute;
+  left: 0;
+  top: 0;
+width: 339px;z-index: 1;}
 
 /* page2 */
 .page2 .colorBox{
