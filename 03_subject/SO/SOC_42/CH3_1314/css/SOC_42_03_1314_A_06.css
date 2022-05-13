@@ -1,64 +1,58 @@
 @charset "utf-8";
 
-li[class*="page"] section{
-  padding:0 144px;
+.icon_active {
+  position: static;
+  display: inline-block;
+  height: 75px;
+  margin-left: 20px;
+  vertical-align: middle;
 }
-li[class*="page"] section .li_answer{
-  margin-left:0;
+
+.page1 .imgBgContainer{
+  background: url(../images/SOC_42_03_1314_A_06/SOC_42_03_1314_A_06_01.png) no-repeat center/100% 100%;
+  padding:20px 50px;
 }
+
 
 /* page2 */
-li.page2 section{
-  padding: 0 60px;
+.page2 .flex-box .left{
+  width: 40%;
 }
-.page2 .img-box{
+.page2 .lineBox{
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
-  width: 25%;
-  box-sizing: border-box;
-  padding: 0 10px;
+  justify-content: flex-start;
+  height: 500px;
+  margin:0 10px;
 }
-.page2 .img-box .img{
-  max-width: 100%;
+.page2 .lineBox .title{
+  border-bottom: 3px solid #ccc;
 }
-.page2 .img-box .img-txt{
-  letter-spacing: -2px;
-  width: 100%;
-  justify-content: center;
-background: #ffbea8;}
+.page2 .lineBox .toggle{
+  margin-top: 30px;
+  height:calc(100% - 80px);
+}
+.page2 .lineBox.green .title{
+  color:yellowgreen;
+}
+.page2 .lineBox.sky .title{
+  color:skyblue;
+}
 
 
-/* popup */
-.whole .pop-title,
-.whole .pop-txt{
-  text-align: center;
-  margin-bottom: 30px;
+/* page3 */
+.page3 .balloon{
+  max-width: calc(100% - 450px);
 }
-.whole .flex-box{
-  align-items: flex-end;
-  margin-top: 50px;
+.page3 .balloon .complete .answer{
+  display: contents;
 }
-.whole .flex-box .img-box{
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-  margin: 0 auto;
+.page3 .char{
+  width:300px;
+  position: absolute;
+  right: 0;
 }
-.whole.pop_page_3 .flex-box .img-box{
-  width: 70%;
-}
-.whole .flex-box .img-box .img{
+.page3 .char img{
   max-width: 100%;
-}
-.whole.pop_page_2 .flex-box{
-  align-items: center;
-  justify-content: space-evenly;
-}
-.whole.pop_page_2 .flex-box .img-box{
-  width: 43%;
-  /* background-color:#fbdce2; */
 }
